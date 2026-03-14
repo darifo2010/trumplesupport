@@ -27,22 +27,6 @@ Trumple uses a real-time connection for multiplayer. Ensure you have a stable in
 **Game is stuck or paused?**
 Games auto-pause when a player disconnects. The game will resume when they reconnect or after a timeout. If all players have left, the game ends after a 5-minute grace period.
 
-## Voice Chat
-
-Trumple includes walkie-talkie voice chat so you can talk with other players during a game.
-
-**How it works:** Hold the microphone button to talk, release to listen. Each transmission is limited to 15 seconds.
-
-**Microphone permission:** Voice chat requires microphone access. If prompted, tap "Allow." If you previously denied access, go to Settings > Trumple > Microphone and enable it.
-
-**Muting audio:** Use the mute button in-game to mute all audio including voice chat.
-
-**Blocking a player:** Tap a player's avatar and select "Block" to stop receiving their voice and emotes. Blocks persist across sessions.
-
-**Reporting a player:** Tap a player's avatar and select "Report" to flag abusive behavior. Choose a reason and add optional details. Reporting automatically blocks the player so you won't hear from them again. Reports are reviewed by our team.
-
-**Need further help?** Use the contact form below with "Voice Chat / Abuse Report" as the subject.
-
 ## Achievements & Leaderboards
 
 **Achievements or leaderboards not updating?**
@@ -75,7 +59,7 @@ To request deletion of your account and all associated data, use the contact for
       <option value="Bug Report">Bug Report</option>
       <option value="Feedback">Feedback</option>
       <option value="Account / Data Deletion">Account / Data Deletion</option>
-      <option value="Voice Chat / Abuse Report">Voice Chat / Abuse Report</option>
+
       <option value="General Question">General Question</option>
       <option value="Other">Other</option>
     </select>

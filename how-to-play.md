@@ -97,22 +97,9 @@ After scoring, the host can choose **Next Game** or **End Game**. In a multi-gam
 
 ---
 
-## Voice Chat
+## Emotes
 
-Trumple has built-in walkie-talkie voice chat. Hold the microphone button to talk and release to listen. Each transmission is limited to 15 seconds.
-
-Voice chat is completely ephemeral — audio is streamed in real-time and is never recorded or stored.
-
----
-
-## Player Safety
-
-Trumple gives you tools to manage your experience:
-
-- **Mute all audio** — Use the mute button to silence everything including voice chat
-- **Block a player** — Tap their avatar and select "Block" to stop receiving their voice and emotes. Blocks persist across sessions
-- **Report a player** — Tap their avatar and select "Report" to flag abusive behavior. Choose a reason (Offensive Voice, Harassment, or Other) and add optional details. Reporting a player automatically blocks them so you won't hear from them again
-- **Unblock** — You can manage your blocked players list to unblock someone later
+During a game, you can send animated emotes to other players as a fun way to react. Tap the emote button to choose from a selection of expressions. Emotes appear as speech bubbles above your avatar.
 
 ---
 
