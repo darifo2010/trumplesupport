@@ -37,9 +37,11 @@ Trumple includes walkie-talkie voice chat so you can talk with other players dur
 
 **Muting audio:** Use the mute button in-game to mute all audio including voice chat.
 
-**Blocking a player:** Tap a player's avatar and select "Block" to stop receiving their voice audio. Blocks persist across sessions.
+**Blocking a player:** Tap a player's avatar and select "Block" to stop receiving their voice and emotes. Blocks persist across sessions.
 
-**Reporting abuse:** If you experience abusive voice behavior, please use the contact form below with "Voice Chat / Abuse Report" as the subject.
+**Reporting a player:** Tap a player's avatar and select "Report" to flag abusive behavior. Choose a reason and add optional details. Reporting automatically blocks the player so you won't hear from them again. Reports are reviewed by our team.
+
+**Need further help?** Use the contact form below with "Voice Chat / Abuse Report" as the subject.
 
 ## Achievements & Leaderboards
 
