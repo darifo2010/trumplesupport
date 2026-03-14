@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trumple — A 4-Player Trick-Taking Card Game</title>
+  <meta name="description" content="Bid strategically, choose your trump suit, and outplay your opponents across 13 tricks. Play with friends or challenge AI bots.">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #1a0f06;
+      color: #e8ddd0;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ── Navigation ── */
+    .site-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(26, 15, 6, 0.9);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(191, 128, 51, 0.2);
+      padding: 0.8rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      text-decoration: none;
+    }
+
+    .nav-brand img {
+      width: 32px;
+      height: 32px;
+      border-radius: 7px;
+    }
+
+    .nav-brand span {
+      font-family: -apple-system, 'SF Pro Rounded', 'Nunito', sans-serif;
+      font-weight: 900;
+      font-size: 1.1rem;
+      color: #fff;
+      letter-spacing: 0.05em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      color: #a08060;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: #bf8033; }
+
+    /* ── Hero ── */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 6rem 2rem 4rem;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: url('assets/splash-bg.png') center/cover no-repeat;
+      filter: brightness(0.35);
+    }
+
+    .hero-gradient {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(26, 15, 6, 0.3) 0%,
+        rgba(26, 15, 6, 0.1) 40%,
+        rgba(26, 15, 6, 0.6) 80%,
+        rgba(26, 15, 6, 1) 100%
+      );
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 680px;
+    }
+
+    .hero-icon {
+      width: 120px;
+      height: 120px;
+      border-radius: 26px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.5), 0 0 60px rgba(191, 128, 51, 0.2);
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-title {
+      font-family: -apple-system, 'SF Pro Rounded', 'Nunito', sans-serif;
+      font-size: 4.5rem;
+      font-weight: 900;
+      color: #ffffff;
+      text-shadow: 0 0 20px rgba(191, 128, 51, 0.8), 0 0 60px rgba(191, 128, 51, 0.3);
+      letter-spacing: 0.08em;
+      margin-bottom: 0.3rem;
+    }
+
+    .hero-suits {
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 0.5em;
+      margin-bottom: 1.2rem;
+    }
+
+    .suit-red { color: rgba(255, 59, 48, 0.9); }
+    .suit-white { color: rgba(255, 255, 255, 0.9); }
+
+    .hero-tagline {
+      font-size: 1.3rem;
+      color: #d4c4a8;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+
+    .hero-sub {
+      font-size: 1.05rem;
+      color: #a08060;
+      margin-bottom: 2rem;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .app-store-badge {
+      display: inline-block;
+      transition: transform 0.2s, opacity 0.2s;
+    }
+
+    .app-store-badge:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    .app-store-badge img {
+      height: 54px;
+    }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      color: #6b5a48;
+      font-size: 0.85rem;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(8px); }
+    }
+
+    /* ── Sections ── */
+    section {
+      padding: 5rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #bf8033;
+      letter-spacing: 0.15em;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-title {
+      font-family: -apple-system, 'SF Pro Rounded', 'Nunito', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    .section-desc {
+      color: #a08060;
+      font-size: 1.05rem;
+      max-width: 600px;
+      margin-bottom: 3rem;
+    }
+
+    /* ── Artwork showcase ── */
+    .artwork-section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .artwork-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr 1fr;
+      gap: 1.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+      align-items: center;
+    }
+
+    .artwork-grid img {
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+    }
+
+    .artwork-grid img.artwork-main {
+      border-radius: 20px;
+      box-shadow: 0 12px 48px rgba(0,0,0,0.5), 0 0 40px rgba(191, 128, 51, 0.15);
+    }
+
+    /* ── Features ── */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .feature-card {
+      background: linear-gradient(135deg, rgba(56, 32, 14, 0.6), rgba(26, 15, 6, 0.8));
+      border: 1px solid rgba(191, 128, 51, 0.15);
+      border-radius: 16px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(191, 128, 51, 0.35);
+    }
+
+    .feature-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .feature-title {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: #e8ddd0;
+      margin-bottom: 0.5rem;
+    }
+
+    .feature-desc {
+      color: #a08060;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    /* ── How it works ── */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      counter-reset: step;
+    }
+
+    .step {
+      text-align: center;
+      position: relative;
+    }
+
+    .step::before {
+      counter-increment: step;
+      content: counter(step);
+      display: block;
+      width: 48px;
+      height: 48px;
+      line-height: 48px;
+      margin: 0 auto 1rem;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #bf8033, #8c4d1a);
+      color: #fff;
+      font-weight: 800;
+      font-size: 1.2rem;
+      box-shadow: 0 4px 16px rgba(191, 128, 51, 0.3);
+    }
+
+    .step-title {
+      font-weight: 700;
+      color: #e8ddd0;
+      margin-bottom: 0.4rem;
+    }
+
+    .step-desc {
+      color: #a08060;
+      font-size: 0.88rem;
+    }
+
+    /* ── Avatars ── */
+    .avatars-row {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+
+    .avatar-showcase {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      border: 3px solid rgba(191, 128, 51, 0.4);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+      transition: transform 0.2s, border-color 0.2s;
+      object-fit: cover;
+    }
+
+    .avatar-showcase:hover {
+      transform: scale(1.1);
+      border-color: #bf8033;
+    }
+
+    .avatar-showcase.bot {
+      border-color: rgba(255, 59, 48, 0.4);
+    }
+
+    .avatar-showcase.bot:hover {
+      border-color: rgba(255, 59, 48, 0.8);
+    }
+
+    .avatar-label {
+      text-align: center;
+      color: #6b5a48;
+      font-size: 0.85rem;
+      margin-top: 0.3rem;
+    }
+
+    /* ── Card showcase ── */
+    .card-row {
+      display: flex;
+      justify-content: center;
+      gap: -10px;
+      margin: 2rem 0;
+    }
+
+    .card-fan {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      height: 180px;
+      margin: 2rem 0;
+    }
+
+    .card-fan img {
+      width: 110px;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      position: absolute;
+      transition: transform 0.3s;
+    }
+
+    .card-fan img:nth-child(1) { transform: rotate(-15deg) translateX(-80px); }
+    .card-fan img:nth-child(2) { transform: rotate(-5deg) translateX(-27px); z-index: 1; }
+    .card-fan img:nth-child(3) { transform: rotate(5deg) translateX(27px); z-index: 2; }
+    .card-fan img:nth-child(4) { transform: rotate(15deg) translateX(80px); z-index: 1; }
+
+    /* ── Divider ── */
+    .divider {
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, #bf8033, transparent);
+      margin: 0 auto;
+    }
+
+    /* ── CTA ── */
+    .cta-section {
+      text-align: center;
+      padding: 5rem 2rem 6rem;
+      position: relative;
+    }
+
+    .cta-bg {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at center, rgba(191, 128, 51, 0.08) 0%, transparent 70%);
+    }
+
+    .cta-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .cta-title {
+      font-family: -apple-system, 'SF Pro Rounded', 'Nunito', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    .cta-desc {
+      color: #a08060;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      max-width: 450px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ── Footer ── */
+    .site-footer {
+      border-top: 1px solid rgba(191, 128, 51, 0.15);
+      padding: 2rem;
+      text-align: center;
+      color: #4a3d30;
+      font-size: 0.85rem;
+    }
+
+    .footer-links {
+      margin-bottom: 0.8rem;
+    }
+
+    .footer-links a {
+      color: #6b5a48;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: #bf8033; }
+
+    /* ── Responsive ── */
+    @media (max-width: 768px) {
+      .hero-title { font-size: 3rem; }
+      .hero-tagline { font-size: 1.1rem; }
+      .features-grid { grid-template-columns: 1fr; gap: 1.2rem; }
+      .steps { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+      .artwork-grid { grid-template-columns: 1fr; gap: 1rem; }
+      .artwork-grid img:first-child,
+      .artwork-grid img:last-child { display: none; }
+      .section-title { font-size: 1.8rem; }
+      .cta-title { font-size: 2rem; }
+      .card-fan img { width: 80px; }
+      .card-fan img:nth-child(1) { transform: rotate(-15deg) translateX(-55px); }
+      .card-fan img:nth-child(2) { transform: rotate(-5deg) translateX(-18px); }
+      .card-fan img:nth-child(3) { transform: rotate(5deg) translateX(18px); }
+      .card-fan img:nth-child(4) { transform: rotate(15deg) translateX(55px); }
+      .card-fan { height: 130px; }
+    }
+
+    @media (max-width: 480px) {
+      .hero { min-height: 90vh; padding: 5rem 1.2rem 3rem; }
+      .hero-title { font-size: 2.4rem; }
+      .hero-icon { width: 88px; height: 88px; border-radius: 20px; }
+      .nav-links { gap: 0.8rem; }
+      .nav-links a { font-size: 0.8rem; }
+      section { padding: 3rem 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="site-nav">
+    <a href="./" class="nav-brand">
+      <img src="assets/app-icon.png" alt="Trumple">
+      <span>TRUMPLE</span>
+    </a>
+    <div class="nav-links">
+      <a href="privacy">Privacy</a>
+      <a href="contact">Support</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-gradient"></div>
+    <div class="hero-content">
+      <img src="assets/app-icon.png" alt="Trumple App Icon" class="hero-icon">
+      <h1 class="hero-title">TRUMPLE</h1>
+      <div class="hero-suits">
+        <span class="suit-red">&#9830;</span>
+        <span class="suit-white">&#9827;</span>
+        <span class="suit-red">&#9829;</span>
+        <span class="suit-white">&#9824;</span>
+      </div>
+      <p class="hero-tagline">A trick-taking card game like no other</p>
+      <p class="hero-sub">Bid boldly, choose your trump, and outplay three rivals across 13 tricks. Real-time multiplayer on iOS.</p>
+      <a href="https://apps.apple.com/app/trumple/id6740091498" class="app-store-badge">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+      </a>
+    </div>
+    <div class="hero-scroll">&#8595; Scroll to explore</div>
+  </div>
+
+  <!-- Artwork Showcase -->
+  <section class="artwork-section">
+    <div class="artwork-grid">
+      <img src="assets/card-back.png" alt="Trumple card back design">
+      <img src="assets/home-bg.jpg" alt="Four players enjoying Trumple" class="artwork-main">
+      <img src="assets/splash-bg.png" alt="Trumple game table">
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Features -->
+  <section>
+    <p class="section-label">Why Trumple?</p>
+    <h2 class="section-title">Not your ordinary card game</h2>
+    <p class="section-desc">Trumple reinvents the trick-taking genre with strategic bidding, dynamic trump selection, and a unique scoring system that rewards precision.</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">&#9824;</div>
+        <h3 class="feature-title">Strategic Bidding</h3>
+        <p class="feature-desc">Choose which cards to bid — they reveal your strategy but stay in your hand for play. Same-suit bids set the trump.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#127917;</div>
+        <h3 class="feature-title">13 Tricks, Every Card</h3>
+        <p class="feature-desc">No discards, no throwaways. All 13 cards matter across 13 tricks. Nail your bid for maximum points.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#9889;</div>
+        <h3 class="feature-title">Real-Time Multiplayer</h3>
+        <p class="feature-desc">Play with friends using room codes or fill seats with smart AI bots. Auto-pause on disconnect, auto-rejoin on return.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#127919;</div>
+        <h3 class="feature-title">Precision Scoring</h3>
+        <p class="feature-desc">Hit your bid exactly for big points. Go over or under and pay the price. Zero-bid gambles can pay off — or backfire.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#127908;</div>
+        <h3 class="feature-title">Voice Chat</h3>
+        <p class="feature-desc">Talk trash and strategize with walkie-talkie style voice streaming. Hold to speak, release to listen.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#127942;</div>
+        <h3 class="feature-title">Achievements & Stats</h3>
+        <p class="feature-desc">Track your win rate, bid accuracy, and streaks. Unlock Game Center achievements as you master the game.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- How to Play -->
+  <section>
+    <p class="section-label">Quick Start</p>
+    <h2 class="section-title">Up and running in minutes</h2>
+    <p class="section-desc">Create a lobby, invite friends, and start playing. It's that simple.</p>
+
+    <div class="card-fan">
+      <img src="assets/card-back.png" alt="Card">
+      <img src="assets/card-back.png" alt="Card">
+      <img src="assets/card-back.png" alt="Card">
+      <img src="assets/card-back.png" alt="Card">
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <h4 class="step-title">Create a Lobby</h4>
+        <p class="step-desc">Get a 6-character room code to share with friends</p>
+      </div>
+      <div class="step">
+        <h4 class="step-title">Invite Players</h4>
+        <p class="step-desc">Friends join with the code, or add AI bots to fill seats</p>
+      </div>
+      <div class="step">
+        <h4 class="step-title">Bid & Strategize</h4>
+        <p class="step-desc">Pick your bid cards to set the trump and your target</p>
+      </div>
+      <div class="step">
+        <h4 class="step-title">Play & Score</h4>
+        <p class="step-desc">Win exactly the tricks you bid for maximum points</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Characters -->
+  <section style="text-align: center;">
+    <p class="section-label">Meet the Players</p>
+    <h2 class="section-title">16 avatars. 3 AI opponents. Your table.</h2>
+    <p class="section-desc" style="margin-left: auto; margin-right: auto;">Choose from 16 hand-drawn watercolor avatars. Playing solo? Our AI bots — Anton, Jade, and Toby — bring their own personalities to the table.</p>
+
+    <div class="avatars-row">
+      <img src="assets/avatar-0.png" alt="Avatar" class="avatar-showcase">
+      <img src="assets/avatar-8.png" alt="Avatar" class="avatar-showcase">
+      <img src="assets/avatar-5.png" alt="Avatar" class="avatar-showcase">
+      <img src="assets/avatar-3.png" alt="Avatar" class="avatar-showcase">
+    </div>
+
+    <div class="avatars-row">
+      <div style="text-align: center;">
+        <img src="assets/bot-anton.png" alt="Anton" class="avatar-showcase bot">
+        <p class="avatar-label">Anton</p>
+      </div>
+      <div style="text-align: center;">
+        <img src="assets/bot-jade.png" alt="Jade" class="avatar-showcase bot">
+        <p class="avatar-label">Jade</p>
+      </div>
+      <div style="text-align: center;">
+        <img src="assets/bot-toby.png" alt="Toby" class="avatar-showcase bot">
+        <p class="avatar-label">Toby</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <div class="cta-bg"></div>
+    <div class="cta-content">
+      <h2 class="cta-title">Ready to play?</h2>
+      <p class="cta-desc">Download Trumple free on the App Store and deal your first hand today.</p>
+      <a href="https://apps.apple.com/app/trumple/id6740091498" class="app-store-badge">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="privacy">Privacy Policy</a>
+      <a href="contact">Support</a>
+    </div>
+    <p>&copy; 2026 Trumple</p>
+  </footer>
+
+</body>
+</html>
