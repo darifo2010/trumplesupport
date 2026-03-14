@@ -218,24 +218,15 @@
       text-align: center;
     }
 
-    .artwork-grid {
-      display: grid;
-      grid-template-columns: 1fr 1.4fr 1fr;
-      gap: 1.5rem;
-      max-width: 900px;
+    .artwork-showcase {
+      max-width: 800px;
       margin: 0 auto;
-      align-items: center;
     }
 
-    .artwork-grid img {
+    .artwork-showcase img {
       width: 100%;
-      border-radius: 16px;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
-    }
-
-    .artwork-grid img.artwork-main {
       border-radius: 20px;
-      box-shadow: 0 12px 48px rgba(0,0,0,0.5), 0 0 40px rgba(191, 128, 51, 0.15);
+      box-shadow: 0 12px 48px rgba(0,0,0,0.5), 0 0 60px rgba(191, 128, 51, 0.12);
     }
 
     /* ── Features ── */
@@ -457,9 +448,7 @@
       .hero-tagline { font-size: 1.1rem; }
       .features-grid { grid-template-columns: 1fr; gap: 1.2rem; }
       .steps { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
-      .artwork-grid { grid-template-columns: 1fr; gap: 1rem; }
-      .artwork-grid img:first-child,
-      .artwork-grid img:last-child { display: none; }
+      .artwork-showcase { max-width: 100%; }
       .section-title { font-size: 1.8rem; }
       .cta-title { font-size: 2rem; }
       .card-fan img { width: 80px; }
@@ -518,10 +507,8 @@
 
   <!-- Artwork Showcase -->
   <section class="artwork-section">
-    <div class="artwork-grid">
-      <img src="assets/card-back.png" alt="Trumple card back design">
-      <img src="assets/home-bg.jpg" alt="Four players enjoying Trumple" class="artwork-main">
-      <img src="assets/splash-bg.png" alt="Trumple game table">
+    <div class="artwork-showcase">
+      <img src="assets/splash-bg.png" alt="Trumple — cards on a Japanese garden table">
     </div>
   </section>
 
