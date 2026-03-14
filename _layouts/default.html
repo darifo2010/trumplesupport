@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title }}</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@900&family=Caveat:wght@400;700&family=Inter:wght@400;500;600&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #26180d;
+      color: #e8ddd0;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    .page-header {
+      background: linear-gradient(135deg, #38200e 0%, #26180d 50%, #1a0f06 100%);
+      border-bottom: 3px solid #bf8033;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+    }
+
+    .page-header h1 {
+      font-family: -apple-system, 'SF Pro Rounded', BlinkMacSystemFont, 'Nunito', sans-serif;
+      font-size: 3.5rem;
+      font-weight: 900;
+      color: #ffffff;
+      text-shadow: 0 0 12px rgba(191, 128, 51, 0.8), 0 0 30px rgba(191, 128, 51, 0.4);
+      margin-bottom: 0.2rem;
+      letter-spacing: 0.08em;
+    }
+
+    .suit-symbols {
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 0.5em;
+      margin-bottom: 0.4rem;
+    }
+
+    .suit-red { color: rgba(255, 59, 48, 0.9); }
+    .suit-white { color: rgba(255, 255, 255, 0.9); }
+
+    .page-header .description {
+      color: #a08060;
+      font-size: 1.1rem;
+    }
+
+    .nav-links {
+      margin-top: 1.2rem;
+    }
+
+    .nav-links a {
+      color: #bf8033;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 500;
+      font-size: 0.95rem;
+      padding: 0.4rem 0;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    .nav-links a:hover {
+      border-bottom-color: #bf8033;
+    }
+
+    .main-content {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+    }
+
+    .main-content h1 {
+      font-family: 'Caveat', cursive;
+      font-size: 2.4rem;
+      color: #bf8033;
+      margin-bottom: 1.2rem;
+      border-bottom: 2px solid #3d2810;
+      padding-bottom: 0.5rem;
+    }
+
+    .main-content h2 {
+      font-size: 1.3rem;
+      color: #d4a050;
+      margin-top: 2rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .main-content p {
+      margin-bottom: 1rem;
+      color: #c8b8a0;
+    }
+
+    .main-content a {
+      color: #bf8033;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(191, 128, 51, 0.3);
+      transition: border-color 0.2s;
+    }
+
+    .main-content a:hover {
+      border-bottom-color: #bf8033;
+    }
+
+    .main-content ul, .main-content ol {
+      margin-bottom: 1rem;
+      padding-left: 1.5rem;
+      color: #c8b8a0;
+    }
+
+    .main-content li {
+      margin-bottom: 0.4rem;
+    }
+
+    .main-content strong {
+      color: #e0d0b8;
+    }
+
+    .main-content hr {
+      border: none;
+      border-top: 1px solid #3d2810;
+      margin: 2rem 0;
+    }
+
+    .main-content code {
+      background: #1a0f06;
+      padding: 0.15rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.9em;
+      color: #d4a050;
+    }
+
+    .main-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1rem;
+    }
+
+    .main-content th, .main-content td {
+      padding: 0.6rem 0.8rem;
+      border: 1px solid #3d2810;
+      text-align: left;
+    }
+
+    .main-content th {
+      background: #1a0f06;
+      color: #d4a050;
+    }
+
+    .app-store-badge img {
+      height: 50px;
+      transition: opacity 0.2s;
+    }
+
+    .app-store-badge img:hover {
+      opacity: 0.85;
+    }
+
+    /* Contact form */
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+
+    .form-group label {
+      display: block;
+      color: #d4a050;
+      font-weight: 500;
+      margin-bottom: 0.4rem;
+      font-size: 0.95rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.7rem 0.9rem;
+      background: #1a0f06;
+      border: 1px solid #3d2810;
+      border-radius: 6px;
+      color: #e8ddd0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 0.95rem;
+      transition: border-color 0.2s;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #bf8033;
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: #6b5a48;
+    }
+
+    .form-group select {
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23bf8033' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.9rem center;
+      padding-right: 2.5rem;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .form-submit {
+      background: linear-gradient(135deg, #bf8033, #8c4d1a);
+      color: #fff;
+      border: none;
+      padding: 0.75rem 2rem;
+      border-radius: 6px;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+
+    .form-submit:hover {
+      opacity: 0.9;
+    }
+
+    .site-footer {
+      border-top: 1px solid #3d2810;
+      padding: 1.5rem;
+      text-align: center;
+      color: #6b5a48;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 600px) {
+      .page-header h1 { font-size: 2.2rem; }
+      .suit-symbols { font-size: 1.5rem; }
+      .main-content { padding: 1.5rem 1rem 3rem; }
+      .nav-links a { margin: 0 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="page-header">
+    <h1>TRUMPLE</h1>
+    <div class="suit-symbols">
+      <span class="suit-red">♦</span>
+      <span class="suit-white">♣</span>
+      <span class="suit-red">♥</span>
+      <span class="suit-white">♠</span>
+    </div>
+    <p class="description">{{ site.description }}</p>
+    <nav class="nav-links">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/privacy' | relative_url }}">Privacy Policy</a>
+      <a href="{{ '/contact' | relative_url }}">Support</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    &copy; {{ 'now' | date: "%Y" }} Trumple
+  </footer>
+</body>
+</html>
