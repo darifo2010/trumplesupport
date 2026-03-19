@@ -317,6 +317,42 @@
       letter-spacing: 0.05em;
     }
 
+    /* ── Mini Playing Cards ── */
+    .mini-cards {
+      display: flex;
+      justify-content: center;
+      gap: 4px;
+      margin-bottom: 0.8rem;
+    }
+
+    .mini-card {
+      width: 32px;
+      height: 44px;
+      background: #f5f0e8;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+
+    .mc-rank {
+      font-size: 0.7rem;
+      font-weight: 800;
+      color: #1a1a1a;
+      line-height: 1;
+    }
+
+    .mc-suit {
+      font-size: 0.75rem;
+      line-height: 1;
+    }
+
+    .mc-red { color: #d03030; }
+    .mc-black { color: #1a1a1a; }
+
     /* ── Game Modes ── */
     .modes-grid {
       display: grid;
@@ -688,7 +724,13 @@
         <p class="game-desc">A popular Middle Eastern partnership game. Win the bid, choose your trump suit, lead your team.</p>
       </a>
       <a href="how-to-play-big2" class="game-card">
-        <div class="game-emoji" style="font-size:1.4rem;color:#e8e8e8;letter-spacing:0.1em;">10 J Q K A<span style="color:#e04040;margin-left:0.2em;">&#9829;</span></div>
+        <div class="mini-cards">
+          <div class="mini-card"><span class="mc-rank">10</span><span class="mc-suit mc-red">&#9829;</span></div>
+          <div class="mini-card"><span class="mc-rank">J</span><span class="mc-suit mc-red">&#9829;</span></div>
+          <div class="mini-card"><span class="mc-rank">Q</span><span class="mc-suit mc-red">&#9829;</span></div>
+          <div class="mini-card"><span class="mc-rank">K</span><span class="mc-suit mc-red">&#9829;</span></div>
+          <div class="mini-card"><span class="mc-rank">A</span><span class="mc-suit mc-red">&#9829;</span></div>
+        </div>
         <h3 class="game-name">Big 2</h3>
         <p class="game-tagline">Be first to shed</p>
         <p class="game-desc">A shedding game — be first to empty your hand with singles, pairs, and powerful 5-card combos.</p>
