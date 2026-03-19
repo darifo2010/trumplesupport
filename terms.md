@@ -5,7 +5,7 @@ title: Terms of Use
 
 # Terms of Use
 
-**Last updated:** 19 March 2026
+**Last updated:** 20 March 2026
 
 These Terms of Use ("Terms") govern your use of the Trumple mobile application ("App") developed by Trumple ("we", "us", "our"). By downloading, installing, or using the App, you agree to these Terms.
 
@@ -87,7 +87,7 @@ We may update these Terms from time to time. Continued use of the App after chan
 
 ## 10. Contact
 
-If you have questions about these Terms, please contact us at [darifo2010@gmail.com](mailto:darifo2010@gmail.com) or visit our [Support page]({{ '/contact' | relative_url }}).
+If you have questions about these Terms, please visit our [Support page]({{ '/contact' | relative_url }}).
 
 ---
 
