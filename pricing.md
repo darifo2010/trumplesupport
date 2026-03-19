@@ -19,14 +19,12 @@ Trumple is built on a simple promise: **no ads, no gambling, no pay-to-win.** Ju
 
 Unlock additional card games with a one-time purchase. **Buy once, own forever.**
 
-| Game | Price (AUD) |
-|------|-------------|
-| Hearts | $4.99 |
-| Spades | $4.99 |
-| Tarneeb | $4.99 |
-| Big 2 | $4.99 |
+- Hearts
+- Spades
+- Tarneeb
+- Big 2
 
-Each unlock gives you full offline play against AI bots. Our bot AI is continuously improved — your offline experience keeps getting better with every update.
+Each unlock gives you full offline play against AI bots. Our bot AI is continuously improved — your offline experience keeps getting better with every update. Prices are shown in the app in your local currency.
 
 ---
 
@@ -34,10 +32,7 @@ Each unlock gives you full offline play against AI bots. Our bot AI is continuou
 
 Take your games online with **Trumple+**.
 
-| Plan | Price (AUD) |
-|------|-------------|
-| Monthly | $4.99/mo |
-| Annual | $39.99/yr (save 33%) |
+Available as a monthly or annual plan. Prices are shown in the app in your local currency.
 
 ### What's Included
 
@@ -64,6 +59,6 @@ Trumple+ unlocks online play for game types you own. Trumple is always owned (it
 
 ## Beta Period
 
-During the 2.0 beta, **everything is free** — all game types and online play are fully unlocked. Pricing takes effect when the beta ends on **30 April 2026**.
+During the 2.0 beta, **everything is free** — all game types and online play are fully unlocked. Pricing takes effect when the beta ends.
 
 [Learn more about the beta →]({{ '/beta' | relative_url }})
