@@ -71,6 +71,35 @@
 
     .nav-links a:hover { color: #bf8033; }
 
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: #bf8033;
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: 0.2rem;
+    }
+
+    @media (max-width: 600px) {
+      .nav-toggle { display: block; }
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(26, 15, 6, 0.97);
+        border-bottom: 1px solid rgba(191, 128, 51, 0.2);
+        flex-direction: column;
+        padding: 1rem 2rem;
+        gap: 0.8rem;
+      }
+      .nav-links.open {
+        display: flex;
+      }
+    }
+
     /* ── Beta Banner ── */
     .beta-banner {
       background: linear-gradient(90deg, rgba(191, 128, 51, 0.15), rgba(191, 128, 51, 0.25), rgba(191, 128, 51, 0.15));
@@ -676,6 +705,7 @@
       <a href="privacy">Privacy</a>
       <a href="contact">Support</a>
     </div>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">&#9776;</button>
   </nav>
 
   <!-- Beta Banner -->

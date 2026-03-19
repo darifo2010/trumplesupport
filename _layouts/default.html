@@ -69,6 +69,35 @@
 
     .nav-links a:hover { color: #bf8033; }
 
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: #bf8033;
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: 0.2rem;
+    }
+
+    @media (max-width: 600px) {
+      .nav-toggle { display: block; }
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(26, 15, 6, 0.97);
+        border-bottom: 1px solid rgba(191, 128, 51, 0.2);
+        flex-direction: column;
+        padding: 1rem 2rem;
+        gap: 0.8rem;
+      }
+      .nav-links.open {
+        display: flex;
+      }
+    }
+
     .main-content {
       max-width: 760px;
       margin: 0 auto;
@@ -241,8 +270,6 @@
 
     @media (max-width: 600px) {
       .main-content { padding: 4.5rem 1rem 3rem; }
-      .nav-links { gap: 0.6rem; }
-      .nav-links a { font-size: 0.75rem; }
     }
   </style>
 </head>
@@ -259,6 +286,7 @@
       <a href="{{ '/privacy' | relative_url }}">Privacy</a>
       <a href="{{ '/contact' | relative_url }}">Support</a>
     </div>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">&#9776;</button>
   </nav>
 
   <main class="main-content">
