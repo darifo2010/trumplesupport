@@ -17,61 +17,62 @@
       min-height: 100vh;
     }
 
-    .page-header {
-      background: linear-gradient(135deg, #38200e 0%, #26180d 50%, #1a0f06 100%);
-      border-bottom: 3px solid #bf8033;
-      padding: 2.5rem 1.5rem;
-      text-align: center;
+    .site-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(26, 15, 6, 0.9);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(191, 128, 51, 0.2);
+      padding: 0.8rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    .page-header h1 {
-      font-family: -apple-system, 'SF Pro Rounded', BlinkMacSystemFont, 'Nunito', sans-serif;
-      font-size: 3.5rem;
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      text-decoration: none;
+    }
+
+    .nav-brand img {
+      width: 32px;
+      height: 32px;
+      border-radius: 7px;
+    }
+
+    .nav-brand span {
+      font-family: -apple-system, 'SF Pro Rounded', 'Nunito', sans-serif;
       font-weight: 900;
-      color: #ffffff;
-      text-shadow: 0 0 12px rgba(191, 128, 51, 0.8), 0 0 30px rgba(191, 128, 51, 0.4);
-      margin-bottom: 0.2rem;
-      letter-spacing: 0.08em;
-    }
-
-    .suit-symbols {
-      font-size: 2rem;
-      font-weight: bold;
-      letter-spacing: 0.5em;
-      margin-bottom: 0.4rem;
-    }
-
-    .suit-red { color: rgba(255, 59, 48, 0.9); }
-    .suit-white { color: rgba(255, 255, 255, 0.9); }
-
-    .page-header .description {
-      color: #a08060;
       font-size: 1.1rem;
+      color: #fff;
+      letter-spacing: 0.05em;
     }
 
     .nav-links {
-      margin-top: 1.2rem;
+      display: flex;
+      gap: 1.5rem;
     }
 
     .nav-links a {
-      color: #bf8033;
+      color: #a08060;
       text-decoration: none;
-      margin: 0 1rem;
+      font-size: 0.9rem;
       font-weight: 500;
-      font-size: 0.95rem;
-      padding: 0.4rem 0;
-      border-bottom: 2px solid transparent;
-      transition: border-color 0.2s;
+      transition: color 0.2s;
     }
 
-    .nav-links a:hover {
-      border-bottom-color: #bf8033;
-    }
+    .nav-links a:hover { color: #bf8033; }
 
     .main-content {
       max-width: 760px;
       margin: 0 auto;
-      padding: 2.5rem 1.5rem 4rem;
+      padding: 5rem 1.5rem 4rem;
     }
 
     .main-content h1 {
@@ -239,32 +240,26 @@
     }
 
     @media (max-width: 600px) {
-      .page-header h1 { font-size: 2.2rem; }
-      .suit-symbols { font-size: 1.5rem; }
-      .main-content { padding: 1.5rem 1rem 3rem; }
-      .nav-links a { margin: 0 0.5rem; }
+      .main-content { padding: 4.5rem 1rem 3rem; }
+      .nav-links { gap: 0.6rem; }
+      .nav-links a { font-size: 0.75rem; }
     }
   </style>
 </head>
 <body>
-  <header class="page-header">
-    <h1>TRUMPLE</h1>
-    <div class="suit-symbols">
-      <span class="suit-red">♦</span>
-      <span class="suit-white">♣</span>
-      <span class="suit-red">♥</span>
-      <span class="suit-white">♠</span>
-    </div>
-    <p class="description">{{ site.description }}</p>
-    <nav class="nav-links">
-      <a href="{{ '/' | relative_url }}">Home</a>
+  <nav class="site-nav">
+    <a href="{{ '/' | relative_url }}" class="nav-brand">
+      <img src="{{ '/assets/app-icon.png' | relative_url }}" alt="Trumple">
+      <span>TRUMPLE</span>
+    </a>
+    <div class="nav-links">
       <a href="{{ '/how-to-play' | relative_url }}">How to Play</a>
       <a href="{{ '/pricing' | relative_url }}">Pricing</a>
       <a href="{{ '/beta' | relative_url }}">Beta</a>
       <a href="{{ '/privacy' | relative_url }}">Privacy</a>
       <a href="{{ '/contact' | relative_url }}">Support</a>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
   <main class="main-content">
     {{ content }}
