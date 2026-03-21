@@ -5,85 +5,90 @@ title: How to Play — Hearts
 
 # How to Play Hearts
 
-Hearts is a 4-player trick-taking game where you try to **avoid** taking penalty cards. Each heart is worth 1 point and the Queen of Spades is worth 13 — the lowest score wins.
-
-## Getting Started
-
-1. Each player is dealt **13 cards** from a standard 52-card deck
-2. Before play begins, each player selects **3 cards to pass** to another player
-3. The player holding the **2 of Clubs** leads the first trick
+Hearts is the opposite of most card games — you're trying to **avoid** winning certain cards. Every heart you collect is a penalty point, and the Queen of Spades is the worst card in the game. The player with the **fewest** points wins.
 
 ---
 
-## Card Passing
+## The Basics
 
-Before each round of play, every player selects 3 cards from their hand to pass. The direction rotates each round:
+- 4 players, standard 52-card deck
+- Each player gets **13 cards**
+- There is **no trump** in Hearts — no suit is more powerful than another
 
-| Round | Pass Direction |
-|-------|---------------|
-| 1 | Left |
-| 2 | Right |
-| 3 | Across |
-| 4 | No pass |
+### Card Order (weakest to strongest)
 
-The cycle then repeats (round 5 = left, round 6 = right, etc.).
+2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, King, Ace
 
 ---
 
-## Trick Play
+## Step 1: Pass Cards
 
-The game consists of **13 tricks**. Every player plays all 13 cards.
+Before playing, you pick **3 cards** from your hand to give away. You want to get rid of dangerous cards (like high spades) and keep safe ones.
 
-### How a Trick Works
+The direction you pass changes each game:
 
-1. The lead player plays a card
-2. Each other player must **follow suit** if they have a card of the led suit
-3. If you don't have the led suit, you may play any card (this is how you dump penalty cards)
-4. The **highest card of the led suit** wins the trick — there is no trump in Hearts
+| Game | You pass to... |
+|------|----------------|
+| 1st | The player on your **left** |
+| 2nd | The player on your **right** |
+| 3rd | The player **across** from you |
+| 4th | **No passing** (keep your hand as-is) |
 
-### First Trick Restrictions
+Then the cycle repeats.
 
-On the very first trick of each round:
-- You **cannot play hearts** or the **Queen of Spades**
-- Exception: if your entire hand is penalty cards, you may play them
+---
 
-### Hearts Broken Rule
+## Step 2: Play Rounds
 
-You **cannot lead with a heart** until hearts have been "broken" — meaning a heart has been played (discarded) on a previous trick when someone was void in the led suit.
+The game has **13 rounds**. In each round, every player plays one card.
+
+### How each round works
+
+1. **Someone leads** — The player with the **2 of Clubs** leads the very first round (they must play it). After that, whoever won the last round leads
+2. **Follow suit** — If the leader plays a club, you must play a club too (if you have one)
+3. **No matching suit?** — If you don't have any cards in that suit, play any card. This is how you dump hearts and the Queen of Spades onto other players
+4. **Highest card wins** — The highest card **of the suit that was led** wins the round and collects all the cards
+
+### Two important rules
+
+**First round protection:** On the very first round, you cannot play hearts or the Queen of Spades (unless your entire hand is penalty cards).
+
+**Hearts must be "broken" first:** You can't start a round by playing a heart until someone has already been forced to play a heart in a previous round (because they didn't have the led suit). Once that happens, hearts are "broken" and can be led freely.
 
 ---
 
 ## Scoring
 
-After all 13 tricks, count the penalty cards you've won:
+After all 13 rounds, count the penalty cards you collected:
 
-| Card | Points |
-|------|--------|
-| Each Heart (♥) | 1 point |
-| Queen of Spades (Q♠) | 13 points |
+| Card | Penalty |
+|------|---------|
+| Any Heart | **1 point** each |
+| Queen of Spades | **13 points** |
 
-**Lowest score wins.** The maximum penalty in a single round is 26 points.
+The maximum penalty in one game is 26 points (all 13 hearts + the Queen). **Lowest score wins.**
 
-### Shooting the Moon
+### Shooting the Moon (the big gamble)
 
-If one player manages to win **all 26 penalty points** (all 13 hearts + the Queen of Spades), they **shoot the moon**:
-- The shooter scores **0 points**
-- Every other player scores **26 points**
+If one player manages to collect **ALL** the penalty cards (every heart + the Queen of Spades), something amazing happens:
 
-This is a high-risk, high-reward play that can completely change the game.
+- That player gets **0 points** instead of 26
+- Every other player gets **26 points**
 
----
-
-## Multi-Game Sessions
-
-After scoring, the host can choose **Next Game** or **End Game**. Cumulative scores carry over — the player with the **lowest** total at the end wins.
+This completely flips the game. But it's very hard to pull off — if you miss even one heart, you're stuck with a huge penalty.
 
 ---
 
-## Tips for New Players
+## Playing Multiple Games
 
-- **Pass your high spades** — The Queen, King, and Ace of Spades are dangerous. Consider passing them.
-- **Void a suit early** — If you can empty a suit from your hand, you can dump penalty cards when that suit is led.
-- **Watch the Queen** — Track whether the Queen of Spades has been played. If it hasn't, be careful with high spades.
-- **Don't lead high** — Leading with aces and kings risks winning tricks with penalty cards in them.
-- **Shooting the moon is rare** — Don't attempt it unless you have a very strong hand. Getting caught halfway is devastating.
+Scores add up across games. The player with the **lowest** total at the end wins the session.
+
+---
+
+## Tips for Beginners
+
+- **Pass away high spades** — The Ace, King, and Queen of Spades are dangerous. If you have them, consider passing them
+- **Empty out a suit** — If you can get rid of all cards in one suit, you'll be able to dump penalty cards whenever that suit is led
+- **Track the Queen** — Always pay attention to whether the Queen of Spades has been played. If it hasn't, be very careful about playing high spades
+- **Don't lead with big cards** — Playing aces and kings first makes you win rounds, and those rounds might have penalty cards in them
+- **Don't try to shoot the moon** unless your hand is incredible — failing halfway is devastating

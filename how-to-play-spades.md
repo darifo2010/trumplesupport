@@ -5,87 +5,90 @@ title: How to Play — Spades
 
 # How to Play Spades
 
-Spades is a 4-player **partnership** trick-taking game where spades are always trump. Work with your partner to make your combined bid while managing your overtricks (bags).
+Spades is a **team game** for 4 players. You and your partner (the player sitting across from you) work together. You each guess how many rounds you'll win, then try to hit that number as a team.
 
-## Getting Started
-
-1. Players sit in a circle — your **partner sits across from you** (positions 1↔3, 2↔4)
-2. Each player is dealt **13 cards** from a standard 52-card deck
-3. Players bid in turn order, then the bidding winner leads the first trick
+The twist: **Spades are the most powerful suit.** A spade beats any card from another suit.
 
 ---
 
-## Bidding
+## The Basics
 
-Each player bids the number of tricks they expect to win (0–13). Bidding is sequential — each player bids in turn.
+- 4 players in 2 teams — your partner sits **across** from you
+- Each player gets **13 cards**
+- Spades are always "trump" — they beat every other suit
 
-- **Standard bid (1–13):** The number of tricks you aim to win
-- **Nil bid (0):** A bold bet that you will win **zero tricks**
+### Card Order (weakest to strongest)
 
-Your team's combined bid is the sum of both partners' standard (non-nil) bids.
+2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, King, Ace
 
 ---
 
-## Trick Play
+## Step 1: Bidding (Making Your Guess)
 
-The game consists of **13 tricks**. Every player plays all 13 cards.
+Each player takes a turn guessing how many rounds they'll win (from 0 to 13).
 
-### How a Trick Works
+- **Normal bid (1–13):** How many rounds you think you'll personally win
+- **Nil bid (0):** A bold bet that you'll win **zero** rounds
 
-1. The lead player plays any card (with one restriction — see below)
-2. Each other player must **follow suit** if they can
-3. If you're void in the led suit, you may play any card — including a spade
-4. **Spades are always trump** — the highest spade beats all non-spade cards
+Your team's goal is the total of both partners' bids. If you bid 4 and your partner bids 3, your team needs to win at least 7 rounds together.
 
-### Spades Broken Rule
+---
 
-You **cannot lead with a spade** until spades have been "broken" — meaning a spade has been played on a previous trick when someone was void in the led suit.
+## Step 2: Play Rounds
 
-### Who Wins the Trick?
+The game has **13 rounds**. In each round, every player plays one card.
 
-- If any spades were played: the **highest spade** wins
-- If no spades were played: the **highest card of the led suit** wins
+### How each round works
+
+1. **Someone leads** — The round leader plays a card
+2. **Follow suit** — You must play a card of the same suit if you have one
+3. **No matching suit?** — If you don't have that suit, you can play anything — including a spade
+4. **Spades beat everything** — If anyone plays a spade, the highest spade wins. Otherwise, the highest card of the led suit wins
+
+### Spades must be "broken" first
+
+You **can't start** a round by playing a spade until someone has been forced to play a spade in an earlier round (because they didn't have the led suit). Once that happens, spades are "broken" and anyone can lead with them.
 
 ---
 
 ## Scoring
 
-Scores are calculated per **team** (both partners share the same score).
+Scores are shared between you and your partner — you win or lose as a team.
 
-### Standard Bids
+### Normal bids
 
-| Result | Points |
-|--------|--------|
-| **Make bid** (tricks ≥ team bid) | +10 × team bid, plus +1 per overtrick |
-| **Fail bid** (tricks < team bid) | -10 × team bid |
+| What happened | Points |
+|---------------|--------|
+| Your team won **enough rounds** (met or beat your combined bid) | **+10** for each round you bid, **+1** for each extra |
+| Your team **fell short** | **-10** for each round you bid |
 
-Overtricks (tricks won beyond your team bid) are called **bags**.
+**Example:** Your team bid 7 and won 9 rounds. You get 70 points (for the bid) + 2 points (for the extras) = 72 points.
 
-### Nil Bids
+### Extra rounds are called "bags"
 
-| Result | Points |
-|--------|--------|
-| **Nil success** (won 0 tricks) | +100 to team |
-| **Nil failure** (won any tricks) | -100 to team |
+Those +1 bonus points for extra rounds are called **bags**, and they're a trap. Bags pile up across games, and when your team hits **10 bags**, you get a **-100 point penalty** and the count resets. So winning too many rounds is actually dangerous.
 
-If a nil bidder wins tricks, those tricks count as bags for the team.
+### Nil bids (bidding zero)
 
-### Bag Penalty
+| What happened | Points |
+|---------------|--------|
+| The nil bidder won **0 rounds** | **+100** for the team |
+| The nil bidder won **any rounds** | **-100** for the team |
 
-Bags accumulate across rounds. When your team reaches **10 bags**, you receive a **-100 point penalty** and your bag count resets (any remainder carries over).
-
----
-
-## Multi-Game Sessions
-
-After scoring, the host can choose **Next Game** or **End Game**. Cumulative team scores carry over. The team with the **highest** total score wins.
+Nil is a huge gamble — 100 points on the line either way. If the nil bidder accidentally wins rounds, those rounds count as bags too.
 
 ---
 
-## Tips for New Players
+## Playing Multiple Games
 
-- **Bid conservatively at first** — Bags add up fast. It's better to make your bid exactly than to collect overtricks.
-- **Communicate through play** — You can't talk strategy with your partner, but your card choices signal your hand strength.
-- **Cover your partner's nil** — If your partner bids nil, lead with high cards to win tricks before they're forced to take one.
-- **Count spades** — There are only 13 spades in the deck. Track which ones have been played.
-- **Watch the bags** — If your team is at 8 or 9 bags, be extra careful about overtricks.
+Scores add up across games. The team with the **highest** total wins the session.
+
+---
+
+## Tips for Beginners
+
+- **Bid carefully** — It's better to win exactly what you bid than to win extra rounds and collect bags
+- **Watch your bag count** — If your team is at 8 or 9 bags, avoid winning extra rounds at all costs
+- **Protect a nil bidder** — If your partner bid nil, lead with your highest cards to win rounds before they're forced to take one
+- **Count the spades** — There are only 13 spades total. Keep track of which ones have been played
+- **Play as a team** — You can't talk strategy with your partner, but your card choices can send signals. Pay attention to what they play

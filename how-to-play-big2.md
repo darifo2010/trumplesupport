@@ -5,98 +5,103 @@ title: How to Play — Big 2
 
 # How to Play Big 2
 
-Big 2 is a 4-player **shedding** card game — the goal is to be the first player to get rid of all your cards. Play singles, pairs, triples, or powerful 5-card combinations to outplay your opponents.
-
-## Getting Started
-
-1. Each player is dealt **13 cards** from a standard 52-card deck
-2. The player holding the **3 of Diamonds** goes first (and must include it in their opening play)
-3. Play continues clockwise
+Big 2 is a race — the first player to **get rid of all their cards** wins. You play cards from your hand onto the table, trying to beat what the last player put down. Run out of cards before everyone else and you win.
 
 ---
 
-## Card Ranking
+## The Basics
 
-Big 2 has a unique card hierarchy — **2 is the highest rank**, not the lowest.
+- 4 players, standard 52-card deck
+- Each player gets **13 cards**
+- No teams, no bidding — just play your cards and empty your hand first
 
-**Rank** (low to high): 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, King, Ace, **2**
+### Card Order (this one's different!)
 
-**Suit** (low to high): Diamonds ♦ < Clubs ♣ < Hearts ♥ < Spades ♠
+In Big 2, the **2 is the strongest card**, not the weakest. Here's the full order from weakest to strongest:
 
-When comparing two cards of the same rank, the higher suit wins (e.g., 7♠ beats 7♥).
+**3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, King, Ace, 2**
+
+### Suit Order (weakest to strongest)
+
+Diamonds, Clubs, Hearts, Spades
+
+If two cards have the same number, the higher suit wins. For example, the 7 of Spades beats the 7 of Hearts.
 
 ---
 
-## Combinations
+## What Can You Play?
 
-You can play the following combinations:
+You can play cards in these combinations:
 
-| Type | Description | Compared By |
-|------|-------------|-------------|
-| **Single** | One card | Card rank, then suit |
-| **Pair** | Two cards of same rank | Rank of pair, then highest suit |
-| **Triple** | Three cards of same rank | Rank of triple |
-| **Straight** | Five cards in sequence | Highest card in the straight |
-| **Flush** | Five cards of same suit | Highest card, then suit |
-| **Full House** | Triple + Pair | Rank of the triple |
-| **Four of a Kind** | Four same rank + any kicker | Rank of the four |
-| **Straight Flush** | Five sequential cards of same suit | Highest card |
+| Play | What it is | Example |
+|------|-----------|---------|
+| **Single** | Just one card | 7 of Hearts |
+| **Pair** | Two cards with the same number | Two 9s |
+| **Triple** | Three cards with the same number | Three Jacks |
 
-### 5-Card Hand Ranking (low to high)
+### 5-Card Combos (from weakest to strongest)
 
-Straight < Flush < Full House < Four of a Kind < Straight Flush
+| Combo | What it is |
+|-------|-----------|
+| **Straight** | Five cards in a row (like 5-6-7-8-9), any suits |
+| **Flush** | Five cards all the same suit |
+| **Full House** | Three of a kind + a pair (like three Kings + two 5s) |
+| **Four of a Kind** | Four of the same number + any extra card |
+| **Straight Flush** | Five cards in a row, all the same suit (the best!) |
 
-A Four of a Kind beats a Full House, which beats a Flush, and so on — regardless of the individual card values.
+A stronger combo type always beats a weaker one. For example, a Full House beats any Flush, no matter what cards are in it.
 
 ---
 
 ## How to Play
 
-### The First Play
+### Starting the game
 
-The player with the **3 of Diamonds** must play first. Their opening play **must include the 3♦** — this can be a single 3♦, a pair/triple containing 3♦, or a 5-card combination containing 3♦.
+The player with the **3 of Diamonds** goes first. Their first play **must include** the 3 of Diamonds — whether as a single card, part of a pair, or part of a bigger combo.
 
-### Taking Turns
+### Taking turns
 
-1. The current play sets the combination type (single, pair, triple, or 5-card)
-2. The next player must either **beat it** with the same type but higher value, or **pass**
-3. You cannot change the combination type mid-round (if a pair was led, you must play a higher pair or pass)
-4. Exception: 5-card hands can beat other 5-card hands of a different subtype if their subtype ranks higher (e.g., a Full House beats any Straight)
+1. The first player puts down a combo (single, pair, triple, or 5-card)
+2. The next player must **beat it** with the **same type of combo but stronger**, or **pass**
+3. You can't change the combo type mid-round — if someone played a pair, you must play a higher pair or pass
+4. **Exception:** Any stronger 5-card combo type beats a weaker one (a Full House beats any Straight)
 
-### Round Reset
+### When everyone passes
 
-When three players pass in a row, the last player who played wins the round and **leads the next round** with any combination they choose.
+When **3 players pass** in a row, the last person who played wins that round. They then get to start a **fresh round** — they can play any combo they want (single, pair, whatever).
+
+This is powerful because you get to choose what type of combo to play, setting the pace for the round.
 
 ### Winning
 
-The first player to empty their hand wins the game.
+The first player to play their **last card** wins the game.
 
 ---
 
 ## Scoring
 
-After someone wins, remaining cards in each player's hand are penalized:
+After someone wins, everyone else gets penalty points based on how many cards they still have:
 
-| Cards Left | Penalty |
-|------------|---------|
-| 1–9 cards | 1 point per card |
-| 10–12 cards | **Doubled** (2 points per card) |
-| 13 cards (never played) | **Tripled** (3 points per card = 39) |
+| Cards left in hand | Penalty |
+|--------------------|---------|
+| **1–9 cards** | 1 point per card |
+| **10–12 cards** | **2 points** per card (doubled!) |
+| **13 cards** (never played at all) | **3 points** per card = 39 total (tripled!) |
 
-The winner scores **0 points**. Lowest score wins over multiple games.
-
----
-
-## Multi-Game Sessions
-
-After scoring, the host can choose **Next Game** or **End Game**. Cumulative scores carry over. The player with the **lowest** total penalty at the end wins.
+The winner gets **0 points**. Lowest total score wins over multiple games.
 
 ---
 
-## Tips for New Players
+## Playing Multiple Games
 
-- **Don't save your 2s too long** — 2s are the strongest singles, but holding them until the end means you're stuck with fewer options.
-- **Control the lead** — Winning a round lets you set the combination type. Use this to play combinations where you're strong.
-- **Watch hand sizes** — When an opponent is down to 1-2 cards, play high to prevent them from going out.
-- **Build 5-card hands** — Straights and flushes let you dump 5 cards at once. Look for these in your hand early.
-- **The 3♦ opening matters** — Think about what combination to use for your opening play. A pair or triple containing 3♦ can be more strategic than playing it as a single.
+Scores add up across games. The player with the **lowest** penalty total at the end wins the session.
+
+---
+
+## Tips for Beginners
+
+- **Don't hoard your 2s** — 2s are the strongest singles, but saving them all for the end limits your options. Use them strategically to win rounds
+- **Win rounds to take control** — When you win a round (everyone else passes), you get to pick the next combo type. Use this to play combos where you're strong
+- **Watch hand sizes** — If someone is down to 1 or 2 cards, play your strongest cards to stop them from going out
+- **Look for 5-card combos early** — Straights, flushes, and full houses let you dump 5 cards at once. Check your hand for these right away
+- **Think about your opening** — Your first play must include the 3 of Diamonds. Sometimes playing it in a pair or combo is smarter than playing it alone

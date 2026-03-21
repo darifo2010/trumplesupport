@@ -5,80 +5,101 @@ title: How to Play — Tarneeb
 
 # How to Play Tarneeb
 
-Tarneeb is a popular Middle Eastern **partnership** trick-taking card game. Bid for the right to choose trump, then work with your partner to win the tricks you promised.
-
-## Getting Started
-
-1. Players sit in a circle — your **partner sits across from you** (positions 1↔3, 2↔4)
-2. Each player is dealt **13 cards** from a standard 52-card deck
-3. Players bid, the winner chooses the trump suit, then play begins
+Tarneeb is a **team game** for 4 players, popular across the Middle East. You and your partner (sitting across from you) bid against the other team. The highest bidder picks which suit is the most powerful — then both teams fight to win rounds.
 
 ---
 
-## Bidding
+## The Basics
 
-Players bid in turn, stating the number of tricks their **team** will win (minimum 7, maximum 13). Each bid must be higher than the previous, or the player passes.
+- 4 players in 2 teams — your partner sits **across** from you
+- Each player gets **13 cards**
+- The highest bidder picks the "trump" suit — that suit beats all other suits
 
-- Bidding continues until three players have passed
-- The remaining player wins the bid and **chooses the trump suit**
-- If everyone passes, the dealer is forced to bid 7
+### Card Order (weakest to strongest)
 
----
-
-## Trump Selection
-
-After winning the bid, you choose any suit as trump. Choose a suit where you and your partner are strong — ideally one you have many high cards in.
-
-Unlike some games, **trump can be led at any time** in Tarneeb — there's no "trump breaking" rule.
+2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, King, Ace
 
 ---
 
-## Trick Play
+## Step 1: Bidding
 
-The game consists of **13 tricks**. Every player plays all 13 cards.
+Players take turns making bids. A bid is a promise that your **team** will win at least that many rounds.
 
-### How a Trick Works
+- Bids go from **7 to 13** (you can't bid lower than 7)
+- Each bid must be **higher** than the last one, or you pass
+- Once 3 players have passed, the remaining player wins the bid
+- If nobody bids, the dealer is forced to bid 7
 
-1. The lead player plays any card
-2. Each other player must **follow suit** if they can
-3. If void in the led suit, you may play any card — including trump
-4. The trick winner leads the next trick
+The winning bidder gets to choose which suit becomes trump (the most powerful suit).
 
-### Who Wins the Trick?
+---
 
-- If any trump cards were played: the **highest trump** wins
-- If no trump was played: the **highest card of the led suit** wins
+## Step 2: Pick Trump
+
+After winning the bid, you choose any suit as the trump suit. Pick a suit where you have lots of strong cards. For example, if you have the Ace, King, and Queen of Hearts, making hearts trump is a great choice.
+
+**Unlike some games, there's no restriction on leading with trump in Tarneeb.** You can play trump cards whenever you want (as long as you follow suit when required).
+
+---
+
+## Step 3: Play Rounds
+
+The game has **13 rounds**. In each round, every player plays one card.
+
+### How each round works
+
+1. **Someone leads** — The bid winner leads the first round by playing any card
+2. **Follow suit** — You must play a card of the same suit if you have one
+3. **No matching suit?** — If you don't have that suit, you can play anything — including trump
+4. **Trump beats everything** — If anyone plays a trump card, the highest trump wins. Otherwise, the highest card of the led suit wins
+
+The round winner leads the next round.
 
 ---
 
 ## Scoring
 
-Scores are calculated per **team** (both partners share the same score).
+Scores are shared between you and your partner — you win or lose as a team.
 
-| Result | Points |
-|--------|--------|
-| **Make bid** (team tricks ≥ bid) | Team scores tricks won |
-| **Fail bid** (team tricks < bid) | Team loses bid amount |
-| **Kaboot** (win all 13, bid < 13) | 16 points (13 + 3 bonus) |
-| **Bid 13 and succeed** | 26 points |
-| **Bid 13 and fail** | -16 points; defenders score double |
+### For the bidding team
 
-**Note:** When the bidding team makes their bid, the defending team scores **0** for that round. The defending team only scores when the bidding team fails.
+| What happened | Points |
+|---------------|--------|
+| Won **enough rounds** to meet your bid | Your team scores the number of rounds you won |
+| **Fell short** of your bid | Your team scores **negative** your bid amount |
 
-The game is typically played to **41 points**.
+**Example:** Your team bid 8 and won 10 rounds. You score 10 points.
+**Example:** Your team bid 8 and won 6 rounds. You score -8 points.
+
+### For the defending team
+
+- If the bidding team **makes** their bid → the defending team scores **0** this round
+- If the bidding team **fails** → the defending team scores the number of rounds they won
+
+### Special scoring
+
+| Situation | Points |
+|-----------|--------|
+| **Kaboot** — win all 13 rounds (but bid less than 13) | **16 points** (bonus!) |
+| **Bid 13 and win** all 13 rounds | **26 points** (huge bonus!) |
+| **Bid 13 and fail** | **-16 points** for your team |
+
+### How to win the session
+
+The first team to reach **41 points** wins. If nobody hits 41, the team with the highest score at the end wins.
 
 ---
 
-## Multi-Game Sessions
+## Playing Multiple Games
 
-After scoring, the host can choose **Next Game** or **End Game**. Cumulative team scores carry over. The team that reaches 41 points (or has the highest score at the end) wins.
+Scores add up across games. Keep playing until a team reaches 41 points, or the host ends the session.
 
 ---
 
-## Tips for New Players
+## Tips for Beginners
 
-- **Bid on your strongest suit** — If you have 5+ cards in a suit with high cards, consider bidding and making it trump.
-- **Support your partner** — If your partner wins the bid, play to help them make it. Lead trump to pull out opponents' trump cards.
-- **Count trump cards** — 13 cards in each suit. Once all trump are played, high cards in other suits become very powerful.
-- **Don't overbid** — Failing your bid gives you negative points AND lets the defenders score. A conservative bid that succeeds is better than an ambitious one that fails.
-- **Go for Kaboot carefully** — Winning all 13 tricks is rare and requires an exceptional hand. The 3-point bonus is nice but the risk of failing is high.
+- **Bid on your best suit** — If you have 5 or more cards in one suit, especially with high cards, that's a good suit to bid on and make trump
+- **Help your partner** — If your partner won the bid, play to support them. Lead trump to force out the other team's trump cards
+- **Count the trump** — There are 13 cards in each suit. Once all the trump cards have been played, high cards in other suits become very powerful
+- **Don't overbid** — Failing your bid gives you negative points AND lets the other team score. A safe bid that succeeds is always better than an ambitious one that fails
+- **Kaboot is rare** — Winning all 13 rounds requires an incredible hand. The bonus is nice, but don't chase it unless everything lines up perfectly
