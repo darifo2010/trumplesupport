@@ -7,14 +7,14 @@ title: Contact & Support — Trumple
 
 ## Getting Started
 
-Trumple is a 4-player trick-taking card game. You need an active Apple Game Center account to play. Make sure Game Center is enabled in your device's Settings under your Apple ID.
+Trumple brings five classic card games to your iPhone and iPad — Trumple, Hearts, Spades, Tarneeb, and Big 2. Play with friends or against AI bots, all in one app. You need an active Apple Game Center account to play. Make sure Game Center is enabled in your device's Settings under your Apple ID.
 
 ## How to Play
 
-- Create or join a lobby using a 6-character room code
-- Add AI bots to fill empty seats
-- Each game consists of a bidding phase followed by 13 tricks
-- For detailed rules, see the in-game tutorial
+- **Quick Play** — Play offline against AI bots. No account needed
+- **Play with Friends** — Create a private lobby, share the room code, and invite friends. Add bots to fill empty seats
+- **Find Match** — Get matched with other players automatically
+- For detailed rules on each game, visit our [How to Play](how-to-play) guide
 
 ## Troubleshooting
 
