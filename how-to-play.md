@@ -42,6 +42,6 @@ Get rid of all your cards before anyone else. Play singles, pairs, or powerful c
 
 **Quick Play** — Jump straight in against AI bots. Works offline, no account needed. Great for learning.
 
-**Play with Friends** — Create a private room, share the 6-letter code with friends, and play together. Add bots to fill empty seats.
+**Play with Friends** — Create a private room, share the 6-letter code with friends, and play together. Add bots to fill empty seats. Voice chat included — talk while you play.
 
 **Find Match** — Get matched with other real players automatically.
