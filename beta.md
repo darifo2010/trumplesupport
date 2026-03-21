@@ -20,14 +20,14 @@ Welcome to the Trumple 2.0 beta! We've added four new card games, online matchma
 
 ## Beta Period
 
-**Now through 30 April 2026**
+Trumple is currently in **free open beta**.
 
 During the beta:
 - All 5 game types are **fully unlocked** — no purchases needed
 - Online multiplayer is **free for everyone** — no subscription needed
 - Everything works — play offline or online, with friends or bots
 
-When the beta ends, the app transitions to its regular pricing model. [See pricing details →]({{ '/pricing' | relative_url }})
+When the beta ends, the app will transition to its regular pricing model. [See pricing details →]({{ '/pricing' | relative_url }})
 
 ---
 

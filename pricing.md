@@ -59,6 +59,6 @@ Trumple+ unlocks online play for game types you own. Trumple is always owned (it
 
 ## Beta Period
 
-During the 2.0 beta, **everything is free** — all game types and online play are fully unlocked. Pricing takes effect when the beta ends.
+During the free open beta, **everything is free** — all game types and online play are fully unlocked. Pricing takes effect when the beta ends.
 
 [Learn more about the beta →]({{ '/beta' | relative_url }})
