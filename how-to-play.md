@@ -24,7 +24,7 @@ Try NOT to win certain cards. Hearts and the Queen of Spades are bad news — th
 ### [Spades]({{ '/how-to-play-spades' | relative_url }})
 *Bid with your partner*
 
-Team up with the player across from you. Guess how many tricks you'll win together, then make it happen. Spades are the most powerful cards.
+Team up with the player across from you. Guess how many tricks you'll win together, then make it happen. Spades is always the trump.
 
 ### [Tarneeb]({{ '/how-to-play-tarneeb' | relative_url }})
 *Partner up, call trump*
