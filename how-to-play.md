@@ -5,7 +5,7 @@ title: How to Play
 
 # How to Play
 
-Trumple brings five classic card games to your iPhone and iPad — Trumple, Hearts, Spades, Tarneeb, and Big 2. Play with friends or against AI bots, all in one app.
+Trumple brings five classic card games to your iPhone and iPad. Pick a game below to learn the rules, or jump straight in — the best way to learn is to play.
 
 ---
 
