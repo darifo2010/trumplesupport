@@ -5,7 +5,7 @@ title: How to Play — Trumple
 
 # How to Play Trumple
 
-Trumple is a card game for 4 players. You bet on how many rounds you think you'll win — then try to win exactly that many. Not more, not less.
+Trumple is a card game for 4 players. You bet on how many tricks you think you'll win — then try to win exactly that many. Not more, not less.
 
 ---
 
@@ -37,7 +37,7 @@ Add up the values of the cards you picked:
 - **Ace** = worth 1
 - **Jack, Queen, King** = worth 0
 
-Your total is the number of rounds you're betting you'll win. For example, if you bid a 5 and a 3, your target is 8 rounds.
+Your total is the number of tricks you're betting you'll win. For example, if you bid a 5 and a 3, your target is 8 tricks.
 
 ### What is Trump?
 
@@ -61,45 +61,45 @@ If everyone's bids add up to exactly 13, the bid winner gets a bonus choice — 
 
 ---
 
-## Part 2: Playing Rounds
+## Part 2: Playing Tricks
 
-The game has exactly **13 rounds** (called "tricks"). In each round, every player plays one card. Here's how each round works:
+The game has exactly **13 tricks**. A trick is one turn where everyone plays a card into the middle — whoever plays the strongest card wins that pile. Here's how each trick works:
 
 ### Step by step
 
-1. **Someone leads** — The round leader plays any card they want
+1. **Someone leads** — The trick leader plays any card they want
 2. **Everyone else follows** — You **must** play a card of the same suit if you have one. This is called "following suit"
 3. **Can't follow suit?** — If you don't have any cards in that suit, you can play any card from your hand
-4. **Trump cards are secret** — If you play a trump card when you can't follow suit, it's placed **face-down**. Nobody sees it until the round is over
+4. **Trump cards are secret** — If you play a trump card when you can't follow suit, it's placed **face-down**. Nobody sees it until the trick is over
 
-### Who wins the round?
+### Who wins the trick?
 
 - If anyone played a **trump card**: the highest trump wins
 - If nobody played trump: the **highest card of the suit that was led** wins
 
-The winner of each round leads the next one.
+The winner of each trick leads the next one.
 
 ---
 
 ## Scoring
 
-After all 13 rounds, you score based on how close you got to your bid:
+After all 13 tricks, you score based on how close you got to your bid:
 
 **If your bid was 1 or more:**
 
 | What happened | Points |
 |---------------|--------|
 | Won **exactly** your bid | **+bid value** (nailed it!) |
-| Won **fewer** than your bid | **-1** for each round you missed |
-| Won **more** than your bid | **-2** for each extra round |
+| Won **fewer** than your bid | **-1** for each trick you missed |
+| Won **more** than your bid | **-2** for each extra trick |
 
 **If your bid was 0 (a gutsy move):**
 
 | What happened | Points |
 |---------------|--------|
-| Won **0 rounds** | **+5** (you pulled it off!) |
-| Won **1 round** | **-5** |
-| Won **2+ rounds** | **-5**, then **-2 more** for each round after the first |
+| Won **0 tricks** | **+5** (you pulled it off!) |
+| Won **1 trick** | **-5** |
+| Won **2+ tricks** | **-5**, then **-2 more** for each trick after the first |
 
 **The key takeaway:** Getting your bid exactly right is everything. Going over your bid is punished more than going under. And bidding zero is a bold all-or-nothing gamble.
 
@@ -117,4 +117,4 @@ After scoring, the host can start another game or end the session. If you keep p
 - **Spy on other bids** — When everyone's bid cards are revealed, you can see what suits they're strong in
 - **Trump is a big deal** — Setting a trump suit gives you power, but it also tells everyone your strong suit
 - **Zero bids are risky** — Getting +5 for winning nothing sounds great, but other players can force cards on you
-- **Going over hurts more** — Winning too many rounds costs -2 each, while winning too few only costs -1 each. When in doubt, play it safe
+- **Going over hurts more** — Winning too many tricks costs -2 each, while winning too few only costs -1 each. When in doubt, play it safe

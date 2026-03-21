@@ -14,7 +14,7 @@ Trumple has five different card games inside it. Every game is played with 4 pla
 ### [Trumple]({{ '/how-to-play-trumple' | relative_url }})
 *Bid bold, play smart*
 
-Pick cards from your hand to make a bet on how many rounds you'll win. Get it exactly right to score big. Free forever.
+Pick cards from your hand to make a bet on how many tricks you'll win. Get it exactly right to score big. Free forever.
 
 ### [Hearts]({{ '/how-to-play-hearts' | relative_url }})
 *Dodge the queen*
@@ -24,7 +24,7 @@ Try NOT to win certain cards. Hearts and the Queen of Spades are bad news — th
 ### [Spades]({{ '/how-to-play-spades' | relative_url }})
 *Bid with your partner*
 
-Team up with the player across from you. Guess how many rounds you'll win together, then make it happen. Spades are the most powerful cards.
+Team up with the player across from you. Guess how many tricks you'll win together, then make it happen. Spades are the most powerful cards.
 
 ### [Tarneeb]({{ '/how-to-play-tarneeb' | relative_url }})
 *Partner up, call trump*
