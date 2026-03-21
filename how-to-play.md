@@ -5,7 +5,7 @@ title: How to Play
 
 # How to Play
 
-Trumple has five different card games inside it. Every game is played with 4 players — you and three others. Don't have enough friends around? No problem — the app fills empty seats with smart AI bots.
+Trumple brings five classic card games to your iPhone and iPad — Trumple, Hearts, Spades, Tarneeb, and Big 2. Play with friends or against AI bots, all in one app.
 
 ---
 
