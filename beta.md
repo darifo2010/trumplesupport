@@ -41,7 +41,7 @@ Your feedback during the beta is invaluable. If you encounter bugs, have suggest
 
 ## Coming Soon
 
-**Voice chat** — Talk with your tablemates during online games. We're building real-time voice chat so your online games feel just like sitting around the dining table with family and friends. Stay tuned.
+**Voice chat** — Talk with your tablemates in private lobbies and join-via-code games. Voice chat is available in Play with Friends — not in random matchmaking. We're building real-time voice so your games feel just like sitting around the dining table with family and friends. Stay tuned.
 
 ---
 

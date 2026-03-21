@@ -41,7 +41,7 @@ Available as a monthly or annual plan. Prices are shown in the app in your local
 - **Matchmaking** — Get paired with other players automatically
 - **Exclusive avatar glow rings** — Stand out at the table with animated ring effects around your avatar
 - **Exclusive card backs** — Customise the back of your cards with premium designs
-- **Voice chat** — Talk with your tablemates during games *(coming soon)*
+- **Voice chat** — Talk with your tablemates in private lobbies and join-via-code games *(coming soon)*
 
 Trumple+ unlocks online play for game types you own. Trumple is always owned (it's free), so a subscription alone gets you Trumple online. For other games, you need both the game unlock and the subscription.
 
