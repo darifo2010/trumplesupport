@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title | default: site.title }}</title>
+  <link rel="icon" type="image/png" href="{{ '/assets/studio-logo-64.png' | relative_url }}">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@900&family=Caveat:wght@400;700&family=Inter:wght@400;500;600&display=swap');
 
@@ -38,6 +39,11 @@
       align-items: center;
       gap: 0.6rem;
       text-decoration: none;
+    }
+
+    .nav-logo {
+      width: 28px;
+      height: 28px;
     }
 
     .nav-brand span {
@@ -270,6 +276,7 @@
 <body>
   <nav class="site-nav">
     <a href="{{ '/' | relative_url }}" class="nav-brand">
+      <img src="{{ '/assets/studio-logo-64.png' | relative_url }}" alt="Trumple Studios" class="nav-logo">
       <span>TRUMPLE STUDIOS</span>
     </a>
     <div class="nav-links">
