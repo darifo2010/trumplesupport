@@ -1,4 +1,4 @@
 ---
 layout: landing
-title: Trumple — A 4-Player Trick-Taking Card Game
+title: Trumple Studios — Indie Games
 ---

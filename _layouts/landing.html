@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trumple — 5 Card Games. One App.</title>
-  <meta name="description" content="Five classic card games with real-time online multiplayer. Trumple, Hearts, Spades, Tarneeb, and Big 2 — play with friends or AI bots on iOS. No ads, no gambling, just pure fun.">
+  <title>Trumple Studios — Indie Games</title>
+  <meta name="description" content="Indie games crafted with care. Trumple — 5 classic card games with online multiplayer. Ricochet — real-time word chain fighting.">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap');
 
@@ -18,7 +18,7 @@
       overflow-x: hidden;
     }
 
-    /* ── Navigation ── */
+    /* -- Navigation -- */
     .site-nav {
       position: fixed;
       top: 0;
@@ -40,12 +40,6 @@
       align-items: center;
       gap: 0.6rem;
       text-decoration: none;
-    }
-
-    .nav-brand img {
-      width: 32px;
-      height: 32px;
-      border-radius: 7px;
     }
 
     .nav-brand span {
@@ -100,90 +94,41 @@
       }
     }
 
-    /* ── Beta Banner ── */
-    .beta-banner {
-      background: linear-gradient(90deg, rgba(191, 128, 51, 0.15), rgba(191, 128, 51, 0.25), rgba(191, 128, 51, 0.15));
-      border-bottom: 1px solid rgba(191, 128, 51, 0.3);
-      padding: 0.5rem 2rem;
-      text-align: center;
-      font-size: 0.85rem;
-      color: #d4a050;
-      font-weight: 500;
-      margin-top: 52px;
-    }
-
-    .beta-banner a {
-      color: #bf8033;
-      text-decoration: underline;
-      margin-left: 0.3rem;
-    }
-
-    /* ── Hero ── */
+    /* -- Hero -- */
     .hero {
       position: relative;
-      min-height: 90vh;
+      min-height: 80vh;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 4rem 2rem;
+      padding: 6rem 2rem 4rem;
     }
 
     .hero-bg {
       position: absolute;
       inset: 0;
-      background: url('assets/splash-bg.png') center/cover no-repeat;
-      filter: brightness(0.35);
-    }
-
-    .hero-gradient {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        to bottom,
-        rgba(26, 15, 6, 0.3) 0%,
-        rgba(26, 15, 6, 0.1) 40%,
-        rgba(26, 15, 6, 0.6) 80%,
-        rgba(26, 15, 6, 1) 100%
-      );
+      background: radial-gradient(ellipse at center top, rgba(191, 128, 51, 0.12) 0%, transparent 60%);
     }
 
     .hero-content {
       position: relative;
       z-index: 2;
-      max-width: 680px;
-    }
-
-    .hero-icon {
-      width: 120px;
-      height: 120px;
-      border-radius: 26px;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.5), 0 0 60px rgba(191, 128, 51, 0.2);
-      margin-bottom: 1.5rem;
+      max-width: 700px;
     }
 
     .hero-title {
       font-family: -apple-system, 'SF Pro Rounded', 'Nunito', sans-serif;
-      font-size: 4.5rem;
+      font-size: 4rem;
       font-weight: 900;
       color: #ffffff;
-      text-shadow: 0 0 20px rgba(191, 128, 51, 0.8), 0 0 60px rgba(191, 128, 51, 0.3);
-      letter-spacing: 0.08em;
-      margin-bottom: 0.3rem;
+      text-shadow: 0 0 20px rgba(191, 128, 51, 0.6), 0 0 60px rgba(191, 128, 51, 0.2);
+      letter-spacing: 0.06em;
+      margin-bottom: 0.5rem;
     }
-
-    .hero-suits {
-      font-size: 2rem;
-      font-weight: bold;
-      letter-spacing: 0.5em;
-      margin-bottom: 1.2rem;
-    }
-
-    .suit-red { color: rgba(255, 59, 48, 0.9); }
-    .suit-white { color: rgba(255, 255, 255, 0.9); }
 
     .hero-tagline {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       color: #d4c4a8;
       margin-bottom: 0.5rem;
       font-weight: 600;
@@ -192,24 +137,8 @@
     .hero-sub {
       font-size: 1.05rem;
       color: #a08060;
-      margin-bottom: 2rem;
       max-width: 520px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .app-store-badge {
-      display: inline-block;
-      transition: transform 0.2s, opacity 0.2s;
-    }
-
-    .app-store-badge:hover {
-      transform: scale(1.05);
-      opacity: 0.9;
-    }
-
-    .app-store-badge img {
-      height: 54px;
+      margin: 0 auto;
     }
 
     .hero-scroll {
@@ -228,7 +157,7 @@
       50% { transform: translateX(-50%) translateY(8px); }
     }
 
-    /* ── Sections ── */
+    /* -- Sections -- */
     section {
       padding: 5rem 2rem;
       max-width: 1000px;
@@ -259,335 +188,138 @@
       margin-bottom: 3rem;
     }
 
-    /* ── Artwork showcase ── */
-    .artwork-section {
-      padding: 4rem 2rem;
-      text-align: center;
-    }
-
-    .artwork-showcase {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    .artwork-showcase img {
-      width: 100%;
-      border-radius: 20px;
-      box-shadow: 0 12px 48px rgba(0,0,0,0.5), 0 0 60px rgba(191, 128, 51, 0.12);
-    }
-
-    /* ── Game Cards (5 games) ── */
-    .games-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
-    }
-
-    .games-grid-bottom {
+    /* -- Game Showcase Cards -- */
+    .showcase-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 1.5rem;
-      max-width: 66%;
-      margin: 1.5rem auto 0;
-    }
-
-    .game-card {
-      background: linear-gradient(135deg, rgba(56, 32, 14, 0.6), rgba(26, 15, 6, 0.8));
-      border: 1px solid rgba(191, 128, 51, 0.15);
-      border-radius: 16px;
-      padding: 2rem 1.5rem;
-      text-align: center;
-      transition: transform 0.2s, border-color 0.2s;
-      text-decoration: none;
-      display: block;
-    }
-
-    .game-card:hover {
-      transform: translateY(-4px);
-      border-color: rgba(191, 128, 51, 0.35);
-    }
-
-    .game-card .game-emoji {
-      font-size: 2.5rem;
-      margin-bottom: 0.8rem;
-    }
-
-    .game-card .game-name {
-      font-weight: 700;
-      font-size: 1.2rem;
-      color: #e8ddd0;
-      margin-bottom: 0.3rem;
-    }
-
-    .game-card .game-tagline {
-      color: #bf8033;
-      font-size: 0.85rem;
-      font-weight: 500;
-      font-style: italic;
-      margin-bottom: 0.6rem;
-    }
-
-    .game-card .game-desc {
-      color: #a08060;
-      font-size: 0.88rem;
-      line-height: 1.5;
-    }
-
-    .game-card .game-badge {
-      display: inline-block;
-      background: rgba(191, 128, 51, 0.2);
-      color: #bf8033;
-      font-size: 0.7rem;
-      font-weight: 600;
-      padding: 0.2rem 0.6rem;
-      border-radius: 20px;
-      margin-top: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    /* ── Mini Playing Cards ── */
-    .mini-cards {
-      display: flex;
-      justify-content: center;
-      gap: 4px;
-      margin-bottom: 0.8rem;
-    }
-
-    .mini-cards.fanned {
-      gap: 0;
-      position: relative;
-      height: 52px;
-      width: 100%;
-    }
-
-    .mini-cards.fanned .mini-card {
-      position: absolute;
-      left: 50%;
-      transform-origin: bottom center;
-    }
-
-    /* 4-card fan (Trumple) */
-    .mini-cards.fan-4 .mini-card:nth-child(1) { transform: translateX(-50%) translateX(-24px) rotate(-12deg); z-index: 1; }
-    .mini-cards.fan-4 .mini-card:nth-child(2) { transform: translateX(-50%) translateX(-8px) rotate(-4deg); z-index: 2; }
-    .mini-cards.fan-4 .mini-card:nth-child(3) { transform: translateX(-50%) translateX(8px) rotate(4deg); z-index: 3; }
-    .mini-cards.fan-4 .mini-card:nth-child(4) { transform: translateX(-50%) translateX(24px) rotate(12deg); z-index: 4; }
-
-    /* 5-card fan (Big 2) */
-    .mini-cards.fan-5 .mini-card:nth-child(1) { transform: translateX(-50%) translateX(-30px) rotate(-14deg); z-index: 1; }
-    .mini-cards.fan-5 .mini-card:nth-child(2) { transform: translateX(-50%) translateX(-15px) rotate(-7deg); z-index: 2; }
-    .mini-cards.fan-5 .mini-card:nth-child(3) { transform: translateX(-50%) rotate(0deg); z-index: 3; }
-    .mini-cards.fan-5 .mini-card:nth-child(4) { transform: translateX(-50%) translateX(15px) rotate(7deg); z-index: 4; }
-    .mini-cards.fan-5 .mini-card:nth-child(5) { transform: translateX(-50%) translateX(30px) rotate(14deg); z-index: 5; }
-
-    .mini-card {
-      width: 32px;
-      height: 44px;
-      background: #f5f0e8;
-      border-radius: 4px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 0;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-    }
-
-    .mc-rank {
-      font-size: 0.7rem;
-      font-weight: 800;
-      color: #1a1a1a;
-      line-height: 1;
-    }
-
-    .mc-suit {
-      font-size: 0.75rem;
-      line-height: 1;
-    }
-
-    .mc-red { color: #d03030; }
-    .mc-black { color: #1a1a1a; }
-
-    /* ── Game Modes ── */
-    .modes-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
       gap: 2rem;
     }
 
-    .mode-card {
-      text-align: center;
+    .showcase-card {
+      background: linear-gradient(135deg, rgba(56, 32, 14, 0.6), rgba(26, 15, 6, 0.8));
+      border: 1px solid rgba(191, 128, 51, 0.15);
+      border-radius: 20px;
+      padding: 2.5rem 2rem;
+      text-decoration: none;
+      display: block;
+      transition: transform 0.2s, border-color 0.2s;
+      position: relative;
+      overflow: hidden;
     }
 
-    .mode-icon {
+    .showcase-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(191, 128, 51, 0.4);
+    }
+
+    .showcase-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 18px;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.4);
+      margin-bottom: 1.2rem;
+    }
+
+    .showcase-placeholder-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #2a1f14, #3d2810);
+      border: 2px solid rgba(191, 128, 51, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-size: 2.2rem;
+      margin-bottom: 1.2rem;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.4);
+    }
+
+    .showcase-name {
+      font-family: -apple-system, 'SF Pro Rounded', 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 1.6rem;
+      color: #fff;
+      margin-bottom: 0.3rem;
+    }
+
+    .showcase-genre {
+      color: #bf8033;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
       margin-bottom: 0.8rem;
     }
 
-    .mode-title {
-      font-weight: 700;
-      color: #e8ddd0;
-      margin-bottom: 0.4rem;
-      font-size: 1.1rem;
-    }
-
-    .mode-desc {
-      color: #a08060;
-      font-size: 0.9rem;
-      line-height: 1.5;
-    }
-
-    /* ── Promise ── */
-    .promise-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1.2rem 2rem;
-    }
-
-    .promise-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.8rem;
-    }
-
-    .promise-check {
-      color: #4cd964;
-      font-size: 1.3rem;
-      flex-shrink: 0;
-      margin-top: 0.1rem;
-    }
-
-    .promise-text {
+    .showcase-desc {
       color: #c8b8a0;
       font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 1.2rem;
     }
 
-    .promise-text strong {
-      color: #e8ddd0;
+    .showcase-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.2rem;
     }
 
-    /* ── Pricing Preview ── */
-    .pricing-cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
-    }
-
-    .price-card {
-      background: linear-gradient(135deg, rgba(56, 32, 14, 0.5), rgba(26, 15, 6, 0.7));
-      border: 1px solid rgba(191, 128, 51, 0.15);
-      border-radius: 16px;
-      padding: 2rem 1.5rem;
-      text-align: center;
-    }
-
-    .price-card.highlight {
-      border-color: rgba(191, 128, 51, 0.4);
-      box-shadow: 0 0 30px rgba(191, 128, 51, 0.1);
-    }
-
-    .price-label {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
+    .showcase-tag {
+      background: rgba(191, 128, 51, 0.15);
       color: #bf8033;
+      font-size: 0.75rem;
       font-weight: 600;
-      margin-bottom: 0.6rem;
+      padding: 0.25rem 0.7rem;
+      border-radius: 20px;
     }
 
-    .price-title {
-      font-weight: 700;
-      font-size: 1.15rem;
-      color: #e8ddd0;
-      margin-bottom: 0.4rem;
-    }
-
-    .price-amount {
-      font-size: 1.6rem;
-      font-weight: 800;
-      color: #fff;
-      margin-bottom: 0.4rem;
-    }
-
-    .price-detail {
-      color: #a08060;
-      font-size: 0.85rem;
-      line-height: 1.5;
-    }
-
-    .price-beta {
+    .showcase-badge {
       display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.3rem 0.9rem;
+      border-radius: 20px;
+    }
+
+    .badge-live {
       background: rgba(76, 217, 100, 0.15);
       color: #4cd964;
-      font-size: 0.75rem;
-      font-weight: 600;
-      padding: 0.3rem 0.8rem;
-      border-radius: 20px;
+    }
+
+    .badge-soon {
+      background: rgba(191, 128, 51, 0.15);
+      color: #bf8033;
+    }
+
+    .showcase-cta {
+      display: inline-block;
       margin-top: 1rem;
+      color: #bf8033;
+      font-weight: 600;
+      font-size: 0.9rem;
     }
 
-    /* ── Avatars ── */
-    .avatars-row {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-      margin-bottom: 1.5rem;
+    .showcase-cta::after {
+      content: ' \2192';
     }
 
-    .avatar-showcase {
-      width: 90px;
-      height: 90px;
-      border-radius: 50%;
-      border: 3px solid rgba(191, 128, 51, 0.4);
-      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
-      transition: transform 0.2s, border-color 0.2s;
-      object-fit: cover;
+    .app-store-badge {
+      display: inline-block;
+      margin-top: 1rem;
+      transition: transform 0.2s, opacity 0.2s;
     }
 
-    .avatar-showcase:hover {
-      transform: scale(1.1);
-      border-color: #bf8033;
+    .app-store-badge:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
     }
 
-    .avatar-showcase.bot {
-      border-color: rgba(255, 59, 48, 0.4);
+    .app-store-badge img {
+      height: 44px;
     }
 
-    .avatar-showcase.bot:hover {
-      border-color: rgba(255, 59, 48, 0.8);
-    }
-
-    .avatar-label {
-      text-align: center;
-      color: #6b5a48;
-      font-size: 0.85rem;
-      margin-top: 0.3rem;
-    }
-
-    /* ── Card showcase ── */
-    .card-fan {
-      display: flex;
-      justify-content: center;
-      position: relative;
-      height: 180px;
-      margin: 2rem 0;
-    }
-
-    .card-fan img {
-      width: 110px;
-      border-radius: 8px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-      position: absolute;
-      transition: transform 0.3s;
-    }
-
-    .card-fan img:nth-child(1) { transform: rotate(-15deg) translateX(-80px); }
-    .card-fan img:nth-child(2) { transform: rotate(-5deg) translateX(-27px); z-index: 1; }
-    .card-fan img:nth-child(3) { transform: rotate(5deg) translateX(27px); z-index: 2; }
-    .card-fan img:nth-child(4) { transform: rotate(15deg) translateX(80px); z-index: 1; }
-
-    /* ── Divider ── */
+    /* -- Divider -- */
     .divider {
       width: 60px;
       height: 3px;
@@ -595,49 +327,37 @@
       margin: 0 auto;
     }
 
-    /* ── CTA ── */
-    .cta-section {
+    /* -- Values -- */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .value-card {
       text-align: center;
-      padding: 5rem 2rem 6rem;
-      position: relative;
+      padding: 1.5rem;
     }
 
-    .cta-bg {
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse at center, rgba(191, 128, 51, 0.08) 0%, transparent 70%);
+    .value-icon {
+      font-size: 2rem;
+      margin-bottom: 0.8rem;
     }
 
-    .cta-content {
-      position: relative;
-      z-index: 1;
+    .value-title {
+      font-weight: 700;
+      color: #e8ddd0;
+      margin-bottom: 0.4rem;
+      font-size: 1.05rem;
     }
 
-    .cta-title {
-      font-family: -apple-system, 'SF Pro Rounded', 'Nunito', sans-serif;
-      font-size: 2.5rem;
-      font-weight: 800;
-      color: #fff;
-      margin-bottom: 0.5rem;
-    }
-
-    .cta-sub {
-      font-size: 1.1rem;
-      color: #d4c4a8;
-      margin-bottom: 0.5rem;
-      font-weight: 500;
-    }
-
-    .cta-desc {
+    .value-desc {
       color: #a08060;
-      font-size: 1rem;
-      margin-bottom: 2rem;
-      max-width: 500px;
-      margin-left: auto;
-      margin-right: auto;
+      font-size: 0.9rem;
+      line-height: 1.5;
     }
 
-    /* ── Footer ── */
+    /* -- Footer -- */
     .site-footer {
       border-top: 1px solid rgba(191, 128, 51, 0.15);
       padding: 2rem;
@@ -660,32 +380,18 @@
 
     .footer-links a:hover { color: #bf8033; }
 
-    /* ── Responsive ── */
+    /* -- Responsive -- */
     @media (max-width: 768px) {
-      .hero-title { font-size: 3rem; }
+      .hero-title { font-size: 2.8rem; }
       .hero-tagline { font-size: 1.1rem; }
-      .games-grid { grid-template-columns: 1fr; gap: 1.2rem; }
-      .games-grid-bottom { grid-template-columns: 1fr; max-width: 100%; }
-      .modes-grid { grid-template-columns: 1fr; gap: 1.5rem; }
-      .promise-grid { grid-template-columns: 1fr; }
-      .pricing-cards { grid-template-columns: 1fr; gap: 1.2rem; }
-      .artwork-showcase { max-width: 100%; }
+      .showcase-grid { grid-template-columns: 1fr; }
+      .values-grid { grid-template-columns: 1fr; gap: 1.5rem; }
       .section-title { font-size: 1.8rem; }
-      .cta-title { font-size: 2rem; }
-      .card-fan img { width: 80px; }
-      .card-fan img:nth-child(1) { transform: rotate(-15deg) translateX(-55px); }
-      .card-fan img:nth-child(2) { transform: rotate(-5deg) translateX(-18px); }
-      .card-fan img:nth-child(3) { transform: rotate(5deg) translateX(18px); }
-      .card-fan img:nth-child(4) { transform: rotate(15deg) translateX(55px); }
-      .card-fan { height: 130px; }
     }
 
     @media (max-width: 480px) {
-      .hero { min-height: 85vh; padding: 3rem 1.2rem; }
-      .hero-title { font-size: 2.4rem; }
-      .hero-icon { width: 88px; height: 88px; border-radius: 20px; }
-      .nav-links { gap: 0.6rem; }
-      .nav-links a { font-size: 0.75rem; }
+      .hero { min-height: 70vh; padding: 5rem 1.2rem 3rem; }
+      .hero-title { font-size: 2.2rem; }
       section { padding: 3rem 1.2rem; }
     }
   </style>
@@ -695,13 +401,11 @@
   <!-- Navigation -->
   <nav class="site-nav">
     <a href="./" class="nav-brand">
-      <img src="assets/app-icon.png" alt="Trumple">
-      <span>TRUMPLE</span>
+      <span>TRUMPLE STUDIOS</span>
     </a>
     <div class="nav-links">
-      <a href="how-to-play">How to Play</a>
-      <a href="pricing">Pricing</a>
-      <a href="beta">Beta</a>
+      <a href="trumple">Trumple</a>
+      <a href="ricochet">Ricochet</a>
       <a href="privacy">Privacy</a>
       <a href="terms">Terms</a>
       <a href="contact">Support</a>
@@ -709,253 +413,104 @@
     <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">&#9776;</button>
   </nav>
 
-  <!-- Beta Banner -->
-  <div class="beta-banner">
-    2.0 Beta — Everything is free during the beta period!
-    <a href="beta">Learn more</a>
-  </div>
-
   <!-- Hero -->
   <div class="hero">
     <div class="hero-bg"></div>
-    <div class="hero-gradient"></div>
     <div class="hero-content">
-      <img src="assets/app-icon.png" alt="Trumple App Icon" class="hero-icon">
-      <h1 class="hero-title">TRUMPLE</h1>
-      <div class="hero-suits">
-        <span class="suit-red">&#9830;</span>
-        <span class="suit-white">&#9827;</span>
-        <span class="suit-red">&#9829;</span>
-        <span class="suit-white">&#9824;</span>
-      </div>
-      <p class="hero-tagline">5 Card Games. One App.</p>
-      <p class="hero-sub">Recreate those family card game evenings — from anywhere. Play Trumple, Hearts, Spades, Tarneeb, and Big 2 with friends or AI bots.</p>
-      <a href="https://apps.apple.com/au/app/trumple/id6760281440" class="app-store-badge">
-        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
-      </a>
+      <h1 class="hero-title">TRUMPLE STUDIOS</h1>
+      <p class="hero-tagline">Games I've always wanted to build</p>
+      <p class="hero-sub">One-person indie studio making the games I grew up wishing existed. No ads, no dark patterns — just games worth playing.</p>
     </div>
-    <div class="hero-scroll">&#8595; Scroll to explore</div>
+    <div class="hero-scroll">&#8595; Meet the games</div>
   </div>
 
-  <!-- Artwork Showcase -->
-  <section class="artwork-section">
-    <div class="artwork-showcase">
-      <img src="assets/splash-bg.png" alt="Trumple — friends playing cards around a table">
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- 5 Games -->
+  <!-- Games -->
   <section>
-    <p class="section-label">The Games</p>
-    <h2 class="section-title">Five ways to play</h2>
-    <p class="section-desc">Classic card games, beautifully crafted for iOS. Each with smart AI bots and real-time online multiplayer.</p>
+    <p class="section-label">Our Games</p>
+    <h2 class="section-title">Two games. Two worlds. One studio.</h2>
+    <p class="section-desc">Each game is its own thing — different genre, different vibe. What they share is attention to detail and fair monetisation.</p>
 
-    <div class="games-grid">
-      <a href="how-to-play-trumple" class="game-card">
-        <div class="mini-cards fanned fan-4">
-          <div class="mini-card"><span class="mc-rank">A</span><span class="mc-suit mc-red">&#9830;</span></div>
-          <div class="mini-card"><span class="mc-rank">A</span><span class="mc-suit mc-black">&#9827;</span></div>
-          <div class="mini-card"><span class="mc-rank">A</span><span class="mc-suit mc-red">&#9829;</span></div>
-          <div class="mini-card"><span class="mc-rank">A</span><span class="mc-suit mc-black">&#9824;</span></div>
+    <div class="showcase-grid">
+      <!-- Trumple -->
+      <a href="trumple" class="showcase-card">
+        <img src="assets/app-icon.png" alt="Trumple" class="showcase-icon">
+        <h3 class="showcase-name">Trumple</h3>
+        <p class="showcase-genre">Card Games</p>
+        <p class="showcase-desc">Five classic card games in one app — Trumple, Hearts, Spades, Tarneeb, and Big 2. Play offline vs smart AI bots or online with friends and matchmaking.</p>
+        <div class="showcase-features">
+          <span class="showcase-tag">5 Games</span>
+          <span class="showcase-tag">Online Multiplayer</span>
+          <span class="showcase-tag">AI Bots</span>
+          <span class="showcase-tag">Voice Chat</span>
         </div>
-        <h3 class="game-name">Trumple</h3>
-        <p class="game-tagline">Bid bold, play smart</p>
-        <p class="game-desc">Our original trick-taking game with unique bidding, dynamic trump, and precision scoring.</p>
-        <span class="game-badge">Free forever</span>
+        <span class="showcase-badge badge-live">On the App Store</span>
+        <br>
+        <span class="showcase-cta">Learn more</span>
       </a>
-      <a href="how-to-play-hearts" class="game-card">
-        <div class="mini-cards">
-          <div class="mini-card"><span class="mc-rank">Q</span><span class="mc-suit mc-black">&#9824;</span></div>
-        </div>
-        <h3 class="game-name">Hearts</h3>
-        <p class="game-tagline">Dodge the queen</p>
-        <p class="game-desc">The classic penalty-avoidance game. Pass cards, avoid hearts, and dodge the Queen of Spades.</p>
-      </a>
-      <a href="how-to-play-spades" class="game-card">
-        <div class="mini-cards">
-          <div class="mini-card"><span class="mc-rank">A</span><span class="mc-suit mc-black">&#9824;</span></div>
-        </div>
-        <h3 class="game-name">Spades</h3>
-        <p class="game-tagline">Bid with your partner</p>
-        <p class="game-desc">Partnership trick-taking where spades are always trump. Manage your bags and cover your partner.</p>
-      </a>
-    </div>
-    <div class="games-grid-bottom">
-      <a href="how-to-play-tarneeb" class="game-card">
-        <div class="mini-cards" style="font-size:2.8rem;margin-bottom:0.5rem;">&#127183;</div>
-        <h3 class="game-name">Tarneeb</h3>
-        <p class="game-tagline">Partner up, call trump</p>
-        <p class="game-desc">A popular Middle Eastern partnership game. Win the bid, choose your trump suit, lead your team.</p>
-      </a>
-      <a href="how-to-play-big2" class="game-card">
-        <div class="mini-cards fanned fan-5">
-          <div class="mini-card"><span class="mc-rank">10</span><span class="mc-suit mc-red">&#9829;</span></div>
-          <div class="mini-card"><span class="mc-rank">J</span><span class="mc-suit mc-red">&#9829;</span></div>
-          <div class="mini-card"><span class="mc-rank">Q</span><span class="mc-suit mc-red">&#9829;</span></div>
-          <div class="mini-card"><span class="mc-rank">K</span><span class="mc-suit mc-red">&#9829;</span></div>
-          <div class="mini-card"><span class="mc-rank">A</span><span class="mc-suit mc-red">&#9829;</span></div>
-        </div>
-        <h3 class="game-name">Big 2</h3>
-        <p class="game-tagline">Be first to shed</p>
-        <p class="game-desc">A shedding game — be first to empty your hand with singles, pairs, and powerful 5-card combos.</p>
+
+      <!-- Ricochet -->
+      <a href="ricochet" class="showcase-card">
+        <div class="showcase-placeholder-icon">&#9876;</div>
+        <h3 class="showcase-name">Ricochet</h3>
+        <p class="showcase-genre">Coming Soon</p>
+        <p class="showcase-desc">A new game is in the works. Details coming soon.</p>
+        <span class="showcase-badge badge-soon">In Development</span>
       </a>
     </div>
   </section>
 
   <div class="divider"></div>
 
-  <!-- Game Modes -->
+  <!-- Studio Values -->
   <section>
-    <p class="section-label">How to Play</p>
-    <h2 class="section-title">Three ways to get a game going</h2>
-    <p class="section-desc">Whether you have 30 seconds or 30 friends, there's a mode for you.</p>
+    <p class="section-label">The Studio</p>
+    <h2 class="section-title">What I believe in</h2>
+    <p class="section-desc">These aren't marketing lines — they're the reason I build games.</p>
 
-    <div class="modes-grid">
-      <div class="mode-card">
-        <div class="mode-icon">&#9889;</div>
-        <h3 class="mode-title">Quick Play</h3>
-        <p class="mode-desc">Play instantly against AI bots. No account needed, works offline. Perfect for a quick game anytime.</p>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="value-icon">&#128683;</div>
+        <h3 class="value-title">No ads. Ever.</h3>
+        <p class="value-desc">We will never show ads in any of our games. Your screen is for playing, not watching.</p>
       </div>
-      <div class="mode-card">
-        <div class="mode-icon">&#128101;</div>
-        <h3 class="mode-title">Play with Friends</h3>
-        <p class="mode-desc">Create a private lobby, share the room code, and invite friends. Add bots to fill empty seats.</p>
+      <div class="value-card">
+        <div class="value-icon">&#127922;</div>
+        <h3 class="value-title">No pay-to-win</h3>
+        <p class="value-desc">Purchases unlock content, never gameplay advantages. Skill wins games, not spending.</p>
       </div>
-      <div class="mode-card">
-        <div class="mode-icon">&#128269;</div>
-        <h3 class="mode-title">Find Match</h3>
-        <p class="mode-desc">Join the matchmaking queue and get paired with other players automatically. Quick and easy.</p>
+      <div class="value-card">
+        <div class="value-icon">&#128274;</div>
+        <h3 class="value-title">Privacy first</h3>
+        <p class="value-desc">No tracking SDKs, no analytics harvesting, no selling data. We collect only what the game needs.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">&#128176;</div>
+        <h3 class="value-title">Transparent pricing</h3>
+        <p class="value-desc">You know exactly what you're paying for. Buy once, own forever. Subscriptions only for services that cost me to run.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">&#128640;</div>
+        <h3 class="value-title">Always maintained</h3>
+        <p class="value-desc">These are passion projects, not abandonware. Regular updates, smarter AI, new features — every game keeps getting better.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">&#128150;</div>
+        <h3 class="value-title">Built with heart</h3>
+        <p class="value-desc">Every game here is something I've always wanted to exist. If I wouldn't play it myself, I wouldn't ship it.</p>
       </div>
     </div>
   </section>
-
-  <div class="divider"></div>
-
-  <!-- Our Promise -->
-  <section>
-    <p class="section-label">Our Promise</p>
-    <h2 class="section-title">Pure fun. Nothing else.</h2>
-    <p class="section-desc">Remember those evenings playing cards around the dining table with family and friends? We're bringing that feeling back.</p>
-
-    <div class="promise-grid">
-      <div class="promise-item">
-        <span class="promise-check">&#10003;</span>
-        <p class="promise-text"><strong>No ads. Ever.</strong> We will never show ads in Trumple. Period.</p>
-      </div>
-      <div class="promise-item">
-        <span class="promise-check">&#10003;</span>
-        <p class="promise-text"><strong>No gambling.</strong> No real money stakes, no loot boxes, no gacha mechanics.</p>
-      </div>
-      <div class="promise-item">
-        <span class="promise-check">&#10003;</span>
-        <p class="promise-text"><strong>Buy once, own forever.</strong> Game unlocks are permanent. No recurring fees for offline play.</p>
-      </div>
-      <div class="promise-item">
-        <span class="promise-check">&#10003;</span>
-        <p class="promise-text"><strong>No pay-to-win.</strong> Purchases unlock content — never gameplay advantages.</p>
-      </div>
-      <div class="promise-item">
-        <span class="promise-check">&#10003;</span>
-        <p class="promise-text"><strong>Smarter bots, always.</strong> Our AI is continuously improved — your offline games keep getting better.</p>
-      </div>
-      <div class="promise-item">
-        <span class="promise-check">&#10003;</span>
-        <p class="promise-text"><strong>Play offline, no account needed.</strong> Quick Play works without internet or sign-in.</p>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- Pricing Preview -->
-  <section style="text-align: center;">
-    <p class="section-label">Pricing</p>
-    <h2 class="section-title">Simple and fair</h2>
-    <p class="section-desc" style="margin-left: auto; margin-right: auto;">Trumple is free. Unlock more games with a one-time purchase. Go online with a subscription.</p>
-
-    <div class="pricing-cards">
-      <div class="price-card">
-        <p class="price-label">Always Free</p>
-        <h3 class="price-title">Trumple</h3>
-        <p class="price-amount">Free</p>
-        <p class="price-detail">Full game, offline vs bots. No catches, no limits.</p>
-        <span class="price-beta">Free during beta</span>
-      </div>
-      <div class="price-card">
-        <p class="price-label">One-Time Unlock</p>
-        <h3 class="price-title">Each Game Type</h3>
-        <p class="price-amount">Buy once</p>
-        <p class="price-detail">Hearts, Spades, Tarneeb, or Big 2. Own forever.</p>
-        <span class="price-beta">Free during beta</span>
-      </div>
-      <div class="price-card highlight">
-        <p class="price-label">Subscription</p>
-        <h3 class="price-title">Trumple+</h3>
-        <p class="price-amount">Monthly or Annual</p>
-        <p class="price-detail">Online multiplayer for all owned games. Lobbies, matchmaking, and more.</p>
-        <span class="price-beta">Free during beta</span>
-      </div>
-    </div>
-    <p style="color: #6b5a48; font-size: 0.85rem; margin-top: 1.5rem;">Prices shown in the app in your local currency. <a href="pricing" style="color: #bf8033;">See full pricing →</a></p>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- Characters -->
-  <section style="text-align: center;">
-    <p class="section-label">Meet the Players</p>
-    <h2 class="section-title">16 avatars. 3 AI opponents. Your table.</h2>
-    <p class="section-desc" style="margin-left: auto; margin-right: auto;">Choose from 16 hand-drawn watercolor avatars. Playing solo? Our AI bots bring their own personalities to the table.</p>
-
-    <div class="avatars-row">
-      <img src="assets/avatar-0.png" alt="Avatar" class="avatar-showcase">
-      <img src="assets/avatar-8.png" alt="Avatar" class="avatar-showcase">
-      <img src="assets/avatar-5.png" alt="Avatar" class="avatar-showcase">
-      <img src="assets/avatar-3.png" alt="Avatar" class="avatar-showcase">
-    </div>
-
-    <div class="avatars-row">
-      <div style="text-align: center;">
-        <img src="assets/bot-anton.png" alt="Anton" class="avatar-showcase bot">
-        <p class="avatar-label">Anton</p>
-      </div>
-      <div style="text-align: center;">
-        <img src="assets/bot-jade.png" alt="Jade" class="avatar-showcase bot">
-        <p class="avatar-label">Jade</p>
-      </div>
-      <div style="text-align: center;">
-        <img src="assets/bot-toby.png" alt="Toby" class="avatar-showcase bot">
-        <p class="avatar-label">Toby</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <div class="cta-section">
-    <div class="cta-bg"></div>
-    <div class="cta-content">
-      <h2 class="cta-title">Your table is ready</h2>
-      <p class="cta-sub">No ads. No gambling. Just pure fun.</p>
-      <p class="cta-desc">Download Trumple free and deal your first hand today. Everything is unlocked during the beta.</p>
-      <a href="https://apps.apple.com/au/app/trumple/id6760281440" class="app-store-badge">
-        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
-      </a>
-    </div>
-  </div>
 
   <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-links">
-      <a href="how-to-play">How to Play</a>
-      <a href="pricing">Pricing</a>
-      <a href="beta">Beta</a>
+      <a href="trumple">Trumple</a>
+      <a href="ricochet">Ricochet</a>
       <a href="privacy">Privacy</a>
       <a href="terms">Terms</a>
       <a href="contact">Support</a>
     </div>
-    <p>&copy; 2026 Trumple</p>
+    <p>&copy; 2026 Trumple Studios</p>
   </footer>
 
 </body>

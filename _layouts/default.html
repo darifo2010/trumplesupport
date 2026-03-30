@@ -40,12 +40,6 @@
       text-decoration: none;
     }
 
-    .nav-brand img {
-      width: 32px;
-      height: 32px;
-      border-radius: 7px;
-    }
-
     .nav-brand span {
       font-family: -apple-system, 'SF Pro Rounded', 'Nunito', sans-serif;
       font-weight: 900;
@@ -276,13 +270,11 @@
 <body>
   <nav class="site-nav">
     <a href="{{ '/' | relative_url }}" class="nav-brand">
-      <img src="{{ '/assets/app-icon.png' | relative_url }}" alt="Trumple">
-      <span>TRUMPLE</span>
+      <span>TRUMPLE STUDIOS</span>
     </a>
     <div class="nav-links">
-      <a href="{{ '/how-to-play' | relative_url }}">How to Play</a>
-      <a href="{{ '/pricing' | relative_url }}">Pricing</a>
-      <a href="{{ '/beta' | relative_url }}">Beta</a>
+      <a href="{{ '/trumple' | relative_url }}">Trumple</a>
+      <a href="{{ '/ricochet' | relative_url }}">Ricochet</a>
       <a href="{{ '/privacy' | relative_url }}">Privacy</a>
       <a href="{{ '/terms' | relative_url }}">Terms</a>
       <a href="{{ '/contact' | relative_url }}">Support</a>
@@ -295,7 +287,7 @@
   </main>
 
   <footer class="site-footer">
-    &copy; {{ 'now' | date: "%Y" }} Trumple
+    &copy; {{ 'now' | date: "%Y" }} Trumple Studios
   </footer>
 </body>
 </html>
